@@ -1,0 +1,209 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1"
+name=keywords content="vim python calendar countdown build">
+<title>toothpik's vim page</title>
+<STYLE TYPE="text/css">
+<!--
+BODY
+    { background-color:#CCCC99;
+      color:black;
+    }
+A:link{color:blue}
+A:visited{color:light-blue}
+-->
+</STYLE>
+</head>
+<body>
+<h1>scott's vim page</h1>
+<!-- dddf is your friend -->
+<p>last updated: 2011-Aug-05<br>
+</p>
+this is not a site on what vim is, or how to use it -- if you find yourself here with either of those<br>
+things in mind, go to the <a href="http://vim.sourceforge.net">vim homepage</a><br>
+<br>
+this page is more about how to have fun with vim than anything, or at least how i have fun with it<br>
+<br>
+it's also about how to have fun with python and tcl<br>
+<br>
+my lastest inclination has been to build an interpreter free vim, ie no python, tcl, perl,<br>
+ruby, or any external languages linked in -- mainly this is a tactic in the quicker<br>
+&quot;enter-to-running&quot; war -- it is also backed with the understanding that if you want to do<br>
+something to your buffer in another language you can write a vim function to save your buffer,<br>
+then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;<br>
+<br>
+here's my <a href=".vimrc">.vimrc</a>, as it existed 2011-Jul-16 at 10:46<br>
+<br>
+here is a bash script called <a href="bin/cabv">cabv</a> i use to save vimrc in my .vim path with a date appended<br>
+to its name<br>
+<br>
+cabv triggers <a href="bin/ruvimrc">ruvimrc</a> which runs a vim script, <a href="uvd.vim">uvd.vim</a>, against my vim web-page<br>
+(this) before uploading both the page and vimrc to the web server -- ruvimrc runs <a href="bin/upload">upload</a> to<br>
+perform the actual transfer, an expect script designed so i can view the ftp output on the<br>
+command line as well as log it to a file<br>
+<br>
+sourced by a Leader command in .vimrc is <a href=".vim/reading_help.vim">reading_help.vim</a> -- i use it on those occasions<br>
+when i change directory to the vim runtime/doc path and read help files -- when sourced directly<br>
+those modules do not get the dash included in the iskeyword option, breaking many of the<br>
+links in the modules -- this script fixes that<br>
+<br>
+yet another module i source with a Leader command in .vimrc is <a href=".vim/mail.vim">mail.vim</a> -- i currently use kmail<br>
+as my email client, and one of the features it provides is to compose new emails in the editor of your<br>
+choice -- when using vim to compose emails i like to have certain things, like the textwidth option,<br>
+set a certain way, and the quote mangling by kmail needs saving<br>
+<br>
+a technique i developed for populating the registers with useful snippets for specific things is to create a<br>
+module like <a href=".vim/html_lets">html_lets</a> that, when sourced, fills certain registers with certain things -- this one i use<br>
+when i am editing html -- vim makes it easy to paste text from the registers with &lt;C-R&gt; so i use this one<br>
+extensively when working with html<br>
+<br>
+i currently have over 60 links on this page, and keeping things current is providing more of a<br>
+challenge all the time -- i wanted something to make uploading easier -- <a href="py/rftpu">rftpu</a> is that something<br>
+<br>
+rftpu is a python script that first loads <a href="ffftp">ffftp</a> and displays it as a cool <a href="three_col.png">3 column list of choices</a> --<br>
+when i make a choice (for upload) rftpu takes that as an index to the 'left' (source) and 'right' (target)<br>
+arrays, and feeds them to a new <a href="bin/upload">upload</a> script -- i had recently been complaining on comp.unix.shell<br>
+that i couldn't capture the output from an ftp session for logging -- apparently ftp recognizes when its<br>
+output is being redirected and goes mute -- i'm sure there's a reason for that, but i'm not afraid to say<br>
+i don't know what it is -- among all the helpful suggestions that didn't work, one poster suggested i<br>
+have a look at 'expect' -- i became an instant fan of both tcl and expect, and 'upload' was born<br>
+<br>
+<br>
+<h4>calendar section</h4>
+the one i use the most is the three month calendar arranged horizontally -- i call it <a href="bin/sacalh">sacalh</a> for<br>
+&quot;stand-alone calendar, horizontal&quot;<br>
+<br>
+to allow calendars to be created in more situations for this one i created a python script i could use at<br>
+the command line called <a href="bin/cm1p1">cm1p1</a> -- calling cm1p1 as input to a :r! command in a vim session, arranged<br>
+with the aid of <a href=".vim/mmatc.vim">mmatc.vim</a> creates a visually pleasing and useful date tool<br>
+<br>
+here is <a href="sacalh_screenshot.png">what it looks like</a><br>
+<br>
+the sacalh calendar typically gets created early in my day and stays on my desktop while i do other things --<br>
+it fits nicely above a konsole session -- i found it staying there enough i wanted to be able to update it to<br>
+the new date when midnight rolls past, so i created a Leader command that calls <a href=".vim/ctnd.vim">ctnd.vim</a><br>
+<br>
+<a href="bin/tocal">tocal</a> - a &quot;todo&quot; calendar caller, for your ~/bin path<br>
+<a href="txt/tocal">tocal</a> - the text for tocal, for your ~/txt path<br>
+<a href=".vim/tocal.vim">tocal.vim</a> - the script for tocal, place on ~/.vim<br>
+<a href="bin/crt_tocal">crt_tocal</a> - the tool that adds years to tocal (makes use of ctdn4, available below)<br>
+<br>
+<a href="py/currmo">currmo</a>, my favorite blog starter, for the ~/py path<br>
+<br>
+with a call to Acdmo() you can have a current month with current date circled in your buffer<br>
+that looks like this <a href="currmo_ss.png">screenshot</a> -- look for &lt;S-F7&gt; in .vimrc<br><br>
+<br>
+<br>
+<h4>countdown section</h4>
+technically, the countdown modules do not belong on my vim page -- they are bash scripts, python, awk,<br>
+and tcl/tk -- well -- i created them using vim, and i pull countdowns into vim sessions so much i think<br>
+of them as vim entities<br>
+<br>
+besides, i don't have a bash/python/awk/tcl/tk page<br>
+<br>
+i have created 5 scripts, which create countdowns in different ways:<br>
+<pre>
+     1) <a href="py/ctdn.py">ctdn</a>:   takes one date -- count down to [date] from current date
+     2) <a href="py/ctdn2.py">ctdn2</a>:  takes two dates -- count from the first date to the second
+     3) <a href="py/ctdn3.py">ctdn3</a>:  takes a count -- count down from today [count] days
+     4) <a href="py/ctdn4.py">ctdn4</a>:  takes a count and a from-date -- count down [count] days from [from-date]
+     5) <a href="py/ctdn5.py">ctdn5</a>:  takes a count and a to-date -- count down [count] days to [to-date]
+</pre>
+all of the ctdn scripts write to sysout, which can be easily redirected to a file or pipe, or pulled into<br>
+a vim session with :r!ctdn...<br>
+<br>
+both #1 and #3 can handle negatives:  for #1, if the date provided is prior to today, it will count down<br>
+from [date] to today -- if the count given to ctdn3 is negative, it starts [count] days ago counting to today<br>
+<br>
+i keep these on my ~/py path, with symbolic links pointing to them from my ~/bin path<br>
+<br>
+the gui, <a href="py/mcdl">mcdl</a>, pulls all 5 scripts together with radio buttons and edit boxes -- this is my first attempt<br>
+at tcl/tk, so don't expect too much -- here's a <a href="mcdl_screenshot.png">screenshot</a><br>
+<br>
+i use <a href="bin/showbooks">showbooks</a> to keep track of my library books<br>
+<br>
+<h4>build section</h4>
+i usually check for a new vim patch level every day -- none of my scripts are unusual or ground-breaking, but<br>
+may be of interest to some<br>
+<br>
+i start with a bash shell, konsole<br>
+<br>
+by virtue of the<br>
+<pre>
+    alias cd7='cd ~/.build/hgvim'
+</pre>
+in my ~/.bashrc (i am big on directory changing aliases) it is easy to get to the vim build path<br>
+<br>
+to help with the occasional brain flatulation i sometimes run my little cheat sheet script <a href=".build/vim/inst">inst</a><br>
+(think &quot;instructions&quot;) which provides a brief description for most of the executables on the build path<br>
+<br>
+since bram moved us to mercurial for vim 7.3 i've started a new build path for vim i call ~/.build/hgvim<br>
+<br>
+i use <a href=".build/vim/t">t</a> to &quot;test&quot; the repository for updates -- this script performs at heart an &quot;hg incoming&quot; -- it tests<br>
+the result of the incoming command to determine whether or not changes are available, and logs the result in<br>
+one of two logs:  the spare-incoming.log is for the &quot;no changes found&quot; attempts, and the incoming.log<br>
+is for queries that report new changesets available<br>
+<br>
+since the last merge, tag tip and branch vim73 no longer reside in the same changeset, so i have re-written my changeset<br>
+finder <a href=".build/vim/cs">cs</a> to look, using <a href=".build/vim/lft.awk">lft.awk</a>, for tag tip only<br>
+<br>
+<a href=".build/vim/cbl">cbl</a> is a cute script that uses the bash paste command to display a screenful of tails of both<br>
+spare-incoming and incoming logs side by side -- you'll want a shell with at least 105 columns to use it<br>
+<br>
+the spare-incoming.log is mind-numbingly repetitive so i wrote <a href=".build/vim/jtfm">jtfm</a> to show the timestamps only --<br>
+it is used by cbl<br>
+<br>
+the scripts that actually update my local repository all start with &quot;u&quot;:<br>
+<pre>
+    <a href=".build/vim/u">u</a>   -  hg pull
+    <a href=".build/vim/u2">u2</a>  -  hg merge $@
+    <a href=".build/vim/u3">u3</a>  -  hg commit $@
+</pre>
+<br>
+and usually the way i run u2 is with <pre>`cs`</pre> as an argument<br>
+<br>
+my build script is a pretty straightforward <a href=".build/vim/m">m</a>, and i like to watch it run in case configure is triggered by<br> the process -- if it is i cancel it and run <a href=".build/vim/myconfig">myconfig</a> which has my size and compiledby options (it is finding<br>
+GTK2 on its own)<br>
+<br>
+install is equally unsurprising, performed with a <a href=".build/vim/i">sudo i</a><br>
+<br>
+some of the other things mentioned in <a href=".build/vim/inst">inst</a>:<br>
+<pre>
+    <a href=".build/vim/sfs">sfs</a>  -  a handy cheat-sheet on how to start from scratch
+</pre>
+<br>
+<br>
+<br>
+another member of my suite of build tools is <a href="bin/rcfnn">rcfnn</a>, the purpose of which is to compare<br>
+my netrw version number with the one on charles' site, and if his is different, bring his down and prepare to<br>
+install it (after saving the old one of course)<br>
+<br>
+rcfnn inspired <a href="bin/rcfnb">rcfnb</a>, which checks for a new bufexplorer,<br>
+and after that <a href="bin/rcfnc">rcfnc</a> was inevitable -- it checks for a new csapprox<br>
+unable to stop myself, i next created <a href="bin/rcfnbi">rcfnbi</a> to check for a newer biogoo<br>
+<br>
+<br>
+<br>
+<pre>
+                            ---here---
+                     (site under construction)
+</pre>
+<br>
+<br>
+<br>
+<a href="bin/gvc">gvc</a><br>
+<br>
+<br>
+<br>
+<a href="bin/gvl">gvl</a><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
+
+
