@@ -47,8 +47,33 @@ me they may well remain broken -- no-one cares, and the only important link here
 <br>
 <br>
 <br>
-here is a bash script called <a href="bin/cabv">cabv</a> i use to save vimrc in my .vim path with a date appended<br>
+here is a bash script called <pre>cabv</pre> i use to save vimrc in my .vim path with a date appended<br>
 to its name<br>
+<pre>
+
+    #!/bin/bash
+    #  check and backup ~/.vimrc
+    files=(~/.vim/backups/.vimrc_*)
+    lb=${files[0]}
+    for f in "${files[@]}"; do
+        if [[ $f -nt $lb ]]; then
+            lb=$f
+        fi
+    done
+    diff -q ~/.vimrc $lb
+    if !(( $? ))
+    then
+        echo "no difference between ~/.vimrc and $lb"
+        exit 0
+    fi
+    diff ~/.vimrc $lb
+    echo 'creating backup:'
+    cp -fv ~/.vimrc ~/.vim/backups/.vimrc_$(date '+%Y%m%d')
+    echo 'uploading to web site'
+    ruvimrc
+
+</pre>
+you can download it <a href="bin/cabv">here</a><br>
 <br>
 cabv triggers <a href="bin/ruvimrc">ruvimrc</a> which runs a vim script, <a href="uvd.vim">uvd.vim</a>, against my vim web-page<br>
 (this) before uploading both the page and vimrc to the web server -- ruvimrc runs <a href="bin/upload">upload</a> to<br>
