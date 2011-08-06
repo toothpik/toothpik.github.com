@@ -19,7 +19,7 @@ A:visited{color:light-blue}
 <body>
 <h1>toothpik's vim page</h1>
 <!-- dddf is your friend -->
-<p>last updated: 2011-Aug-05<br>
+<p>last updated: 2011-Aug-06<br>
 </p>
 this is not a site on what vim is, or how to use it -- if you find yourself here with either of those<br>
 things in mind, go to the <a href="http://vim.sourceforge.net">vim homepage</a><br>
@@ -36,9 +36,9 @@ ruby, or any external languages linked in -- mainly this is a tactic in the quic
 something to your buffer in another language you can write a vim function to save your buffer,<br>
 then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;<br>
 <br>
-here's my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vimrc">.vimrc</a>, as it existed 2011-Aug-05 at 16:18<br>
+here's my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vimrc">.vimrc</a>, as it existed at at least one point in time<br>
 <br>
-here is a bash script called <strong>cabv</strong> i use to save vimrc in my .vim path with a date appended<br>
+here is a bash script i call <strong>cabv</strong> i use to save vimrc in my .vim path with a date appended<br>
 to its name<br>
 <pre>
 
@@ -54,17 +54,23 @@ to its name<br>
     diff -q ~/.vimrc $lb
     if !(( $? ))
     then
-        echo "no difference between ~/.vimrc and $lb"
+        echo "no difference between ~/.vimrc and $lb" | sed -f ~/fhp.sed
         exit 0
     fi
     diff ~/.vimrc $lb
     echo 'creating backup:'
     cp -fv ~/.vimrc ~/.vim/backups/.vimrc_$(date '+%Y%m%d')
     echo 'uploading to web site'
-    ruvimrc
+    cd ~/toothpik-s-.vimrc
+    cp -f ~/.vimrc .
+    git add .vimrc
+    echo 'enter a consise and relevant phrase for the commit message:'
+    read cmmsg
+    git commit -m "$cmmsg"
+    echo 'about to push to github, get your pass-phrase ready'
+    git push origin master
 
 </pre>
-you can download it <a href="bin/cabv">here</a><br>
 <br>
 <br>
 <br>
