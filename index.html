@@ -42,6 +42,7 @@ and here is the bash script i call <a href="https://github.com/toothpik/toothpik
 to its name<br>
 <br>
 <br>
+<h4>feline section</h4>
 here i am with my new favorite coding <a href="stubbie2.jpg">companion</a> who has a sixth sense that tells her<br>
 when i'm playing shisen-sho so i will be sufficiently sedentary it'd be a good time to come snooze<br>
 on me<br>
@@ -58,13 +59,13 @@ sacalh tells gvim to source <a href="https://github.com/toothpik/toothpik-s-.vim
 <br>
 let the littlest not be forgotten:  here is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/mofix.sed">mofix.sed</a><br>
 <br>
-here is what it <a href="sacalh.png">looks</a> like in use<br>
+here is what sacalh <a href="sacalh.png">looks</a> like in use<br>
 <br>
 <br>
 <!--
-as of this writing most of the following links are broken -- i recently had to move from having<br>
+as of this writing most of the following links are broken ... i recently had to move from having<br>
 a normal website hosted by my ISP to this one hosted by github, so until someone lights a fire under<br>
-me they may well remain broken -- no-one cares, and the only important link here is the one to my<br>
+me they may well remain broken - no-one cares, and the only important link here is the one to my<br>
 .vimrc<br>
 <br>
 <br>
@@ -80,39 +81,39 @@ me they may well remain broken -- no-one cares, and the only important link here
 <a href="py/currmo">currmo</a>, my favorite blog starter, for the ~/py path<br>
 <br>
 with a call to Acdmo() you can have a current month with current date circled in your buffer<br>
-that looks like this <a href="currmo_ss.png">screenshot</a> -- look for &lt;S-F7&gt; in .vimrc<br><br>
+that looks like this <a href="currmo_ss.png">screenshot</a> - look for &lt;S-F7&gt; in .vimrc<br><br>
 <br>
 <br>
 <h4>countdown section</h4>
-technically, the countdown modules do not belong on my vim page -- they are bash scripts, python, awk,<br>
-and tcl/tk -- well -- i created them using vim, and i pull countdowns into vim sessions so much i think<br>
+technically, the countdown modules do not belong on my vim page - they are bash scripts, python, awk,<br>
+and tcl/tk - well - i created them using vim, and i pull countdowns into vim sessions so much i think<br>
 of them as vim entities<br>
 <br>
 besides, i don't have a bash/python/awk/tcl/tk page<br>
 <br>
 i have created 5 scripts, which create countdowns in different ways:<br>
 <pre>
-     1) <a href="py/ctdn.py">ctdn</a>:   takes one date -- count down to [date] from current date
-     2) <a href="py/ctdn2.py">ctdn2</a>:  takes two dates -- count from the first date to the second
-     3) <a href="py/ctdn3.py">ctdn3</a>:  takes a count -- count down from today [count] days
-     4) <a href="py/ctdn4.py">ctdn4</a>:  takes a count and a from-date -- count down [count] days from [from-date]
-     5) <a href="py/ctdn5.py">ctdn5</a>:  takes a count and a to-date -- count down [count] days to [to-date]
+     1) <a href="py/ctdn.py">ctdn</a>:   takes one date - count down to [date] from current date
+     2) <a href="py/ctdn2.py">ctdn2</a>:  takes two dates - count from the first date to the second
+     3) <a href="py/ctdn3.py">ctdn3</a>:  takes a count - count down from today [count] days
+     4) <a href="py/ctdn4.py">ctdn4</a>:  takes a count and a from-date - count down [count] days from [from-date]
+     5) <a href="py/ctdn5.py">ctdn5</a>:  takes a count and a to-date - count down [count] days to [to-date]
 </pre>
 all of the ctdn scripts write to sysout, which can be easily redirected to a file or pipe, or pulled into<br>
 a vim session with :r!ctdn...<br>
 <br>
 both #1 and #3 can handle negatives:  for #1, if the date provided is prior to today, it will count down<br>
-from [date] to today -- if the count given to ctdn3 is negative, it starts [count] days ago counting to today<br>
+from [date] to today - if the count given to ctdn3 is negative, it starts [count] days ago counting to today<br>
 <br>
 i keep these on my ~/py path, with symbolic links pointing to them from my ~/bin path<br>
 <br>
-the gui, <a href="py/mcdl">mcdl</a>, pulls all 5 scripts together with radio buttons and edit boxes -- this is my first attempt<br>
-at tcl/tk, so don't expect too much -- here's a <a href="mcdl_screenshot.png">screenshot</a><br>
+the gui, <a href="py/mcdl">mcdl</a>, pulls all 5 scripts together with radio buttons and edit boxes - this is my first attempt<br>
+at tcl/tk, so don't expect too much - here's a <a href="mcdl_screenshot.png">screenshot</a><br>
 <br>
 i use <a href="bin/showbooks">showbooks</a> to keep track of my library books<br>
 <br>
 <h4>build section</h4>
-i usually check for a new vim patch level every day -- none of my scripts are unusual or ground-breaking, but<br>
+i usually check for a new vim patch level every day - none of my scripts are unusual or ground-breaking, but<br>
 may be of interest to some<br>
 <br>
 i start with a bash shell, konsole<br>
@@ -128,7 +129,7 @@ to help with the occasional brain flatulation i sometimes run my little cheat sh
 <br>
 since bram moved us to mercurial for vim 7.3 i've started a new build path for vim i call ~/.build/hgvim<br>
 <br>
-i use <a href=".build/vim/t">t</a> to &quot;test&quot; the repository for updates -- this script performs at heart an &quot;hg incoming&quot; -- it tests<br>
+i use <a href=".build/vim/t">t</a> to &quot;test&quot; the repository for updates - this script performs at heart an &quot;hg incoming&quot; - it tests<br>
 the result of the incoming command to determine whether or not changes are available, and logs the result in<br>
 one of two logs:  the spare-incoming.log is for the &quot;no changes found&quot; attempts, and the incoming.log<br>
 is for queries that report new changesets available<br>
@@ -137,9 +138,9 @@ since the last merge, tag tip and branch vim73 no longer reside in the same chan
 finder <a href=".build/vim/cs">cs</a> to look, using <a href=".build/vim/lft.awk">lft.awk</a>, for tag tip only<br>
 <br>
 <a href=".build/vim/cbl">cbl</a> is a cute script that uses the bash paste command to display a screenful of tails of both<br>
-spare-incoming and incoming logs side by side -- you'll want a shell with at least 105 columns to use it<br>
+spare-incoming and incoming logs side by side - you'll want a shell with at least 105 columns to use it<br>
 <br>
-the spare-incoming.log is mind-numbingly repetitive so i wrote <a href=".build/vim/jtfm">jtfm</a> to show the timestamps only --<br>
+the spare-incoming.log is mind-numbingly repetitive so i wrote <a href=".build/vim/jtfm">jtfm</a> to show the timestamps only -<br>
 it is used by cbl<br>
 <br>
 the scripts that actually update my local repository all start with &quot;u&quot;:<br>
@@ -151,7 +152,7 @@ the scripts that actually update my local repository all start with &quot;u&quot
 <br>
 and usually the way i run u2 is with <pre>`cs`</pre> as an argument<br>
 <br>
-my build script is a pretty straightforward <a href=".build/vim/m">m</a>, and i like to watch it run in case configure is triggered by<br> the process -- if it is i cancel it and run <a href=".build/vim/myconfig">myconfig</a> which has my size and compiledby options (it is finding<br>
+my build script is a pretty straightforward <a href=".build/vim/m">m</a>, and i like to watch it run in case configure is triggered by<br> the process - if it is i cancel it and run <a href=".build/vim/myconfig">myconfig</a> which has my size and compiledby options (it is finding<br>
 GTK2 on its own)<br>
 <br>
 install is equally unsurprising, performed with a <a href=".build/vim/i">sudo i</a><br>
@@ -168,7 +169,7 @@ my netrw version number with the one on charles' site, and if his is different, 
 install it (after saving the old one of course)<br>
 <br>
 rcfnn inspired <a href="bin/rcfnb">rcfnb</a>, which checks for a new bufexplorer,<br>
-and after that <a href="bin/rcfnc">rcfnc</a> was inevitable -- it checks for a new csapprox<br>
+and after that <a href="bin/rcfnc">rcfnc</a> was inevitable - it checks for a new csapprox<br>
 unable to stop myself, i next created <a href="bin/rcfnbi">rcfnbi</a> to check for a newer biogoo<br>
 <br>
 <br>
