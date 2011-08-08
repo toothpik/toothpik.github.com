@@ -43,17 +43,17 @@ to its name<br>
 <br>
 <br>
 <h4>feline section</h4>
-here i am with my new favorite coding <a href="stubbie2.jpg">companion</a> who has a sixth sense that tells her<br>
-when i'm playing shisen-sho so i will be sufficiently sedentary it'd be a good time to come snooze<br>
+here i am with my new favorite coding <a href="stubbie2.jpg">companion</a> -- she has a sixth sense that tells her when<br>
+i'm playing shisen-sho so i will be sufficiently sedentary it'd be a good time to come snooze<br>
 on me<br>
 <br>
 <br>
 <h4>calendar section</h4>
 my first calendar is a small reminder of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/weekly">weekly</a> chores, coded so the current day of week is always<br>
-in the middle with three days above and three days below -- i accomplish this by copying my<br>
-<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/weekly">txt/weekly</a> module into a /tmp file twice -- that way when i source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weekly.vim">.vim/weekly.vim</a> on it, it can always<br>
-find the current day of week with three days on either side of it -- in addition i am spared the indignity<br>
-of having to keep a 14 row txt/module with resulting double entries necessary<br>
+highlighted and in the middle with three days above and three days below -- i accomplish this by<br>
+copying my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/weekly">txt/weekly</a> module into a /tmp file twice -- that way when i source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weekly.vim">.vim/weekly.vim</a> on it,<br>
+it can always find the current day of week with three days on either side of it -- in addition i am spared<br>
+the indignity of having to keep a 14 row txt/module with resulting double entries necessary<br>
 <br>
 i should probably mention at this point i have a symbolic link in my ~/bin path called <b>g</b> that points<br>
 to gvim -- it's eminently easier to type than gvim, and yes, i have one called <b>v</b> that points to vim<br>
@@ -67,16 +67,24 @@ sacalh tells gvim to source <a href="https://github.com/toothpik/toothpik-s-.vim
 <br>
 let the littlest not be forgotten:  here is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/mofix.sed">mofix.sed</a><br>
 <br>
-here is what <a href="sacalh.png">sacalh</a> looks like in use<br>
+and this is what sacalh looks like <a href="sacalh.png">in use</a><br>
 <br>
 the third calendar i keep on my desktop -- i might mention here i have 4 desktops, and arrange these<br>
 calendars, plus a monster konsole session, on desktop #2 -- the third calendar started out similar to<br>
-the weekly calendar, and over time it morphed into a log reporting tool -- the subject being laundry,<br>
-the need being unlimited flexibility -- i call my laundry caller-upper <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/snls">snls</a> -- if i ever typed it at a command<br>
+the weekly calendar, and over time morphed into a log reporting tool -- the subject being laundry, the<br>
+need being unlimited flexibility -- i call my laundry caller-upper <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/snls">snls</a> -- if i ever typed it at a command<br>
 prompt (i don't) i would think &quot;show new laundry schedule&quot; as i typed it<br>
 <br>
+snls invokes gvim on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/snls.vim">snls.vim</a>, which reads the output from <a href=https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sll2">sll2</a> into a hidden buffer -- of course, sll2<br>
+would have nothing to report if it didn't have <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/laundry.log">laundry.log</a> to read<br>
 <br>
+the requisite picture of <a href="laundry.png">snls at work</a> (the cursor isn't nearly so obnoxious when the window doesn't<br>
+have focus)<br>
 <br>
+i invoke all three calendars with a single <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ws">ws</a> (think workspace), and each is coded so they can be<br>
+updated after midnight with a &lt;Leader&gt;c<br>
+<br>
+further, each knows how to position itself above a konsole, giving a nice <a href="work.png">workable desktop</a><br>
 <br>
 <br>
 <br>
