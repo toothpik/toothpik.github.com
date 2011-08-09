@@ -135,11 +135,14 @@ i have defined fiscal months as starting on the 23rd and ending on the 22nd -- t
 a full week of lead time for transactions targeted for the 1st, and the month starts off clean<br>
 with the first transactions first -- that's my take on it, it's my system, so i get to decide<br>
 <br>
-m uses a variable combination of mYY modules to display the relevant portion of my account, for example<br>
+m uses a variable combination of mYY modules to display the relevant portion of my account, for<br>
+example:<br>
 <pre>
     { m11 8; m11 9 } | head -32
 </pre>
-will display august and most of september for 2011<br>
+will display august and most of september for 2011 -- m starts by running the entire year (<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m11">m11</a>)<br>
+through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/funclear.awk">funclear.awk</a> in order to determine whether the first unclear transaction occurs in the<br>
+same or the previous fiscal month<br>
 <br>
 <br>
 <br>
