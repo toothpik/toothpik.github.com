@@ -35,6 +35,9 @@ then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;sc
 <br>
 here's my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vimrc">.vimrc</a>, as it existed at at least one point in time<br>
 <br>
+one script used in my .vimrc is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/currmo">currmo</a> -- its output is read into the current buffer in the Acdmo()<br>
+function, which i've mapped to &lt;S-F7&gt;<br>
+<br>
 and here is the bash script i call <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cabv">cabv</a> i use to save vimrc in my .vim path with a date appended<br>
 to its name<br>
 <br>
@@ -119,12 +122,8 @@ sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/
 <br>
 <br>
 <br>
-<!--
-<a href="bin/tocal">tocal</a> - a &quot;todo&quot; calendar caller, for your ~/bin path<br>
-<a href="txt/tocal">tocal</a> - the text for tocal, for your ~/txt path<br>
-<a href=".vim/tocal.vim">tocal.vim</a> - the script for tocal, place on ~/.vim<br>
-<a href="bin/crt_tocal">crt_tocal</a> - the tool that adds years to tocal (makes use of ctdn4, available below)<br>
 <br>
+<!--
 <a href="py/currmo">currmo</a>, my favorite blog starter, for the ~/py path<br>
 <br>
 with a call to Acdmo() you can have a current month with current date circled in your buffer<br>
