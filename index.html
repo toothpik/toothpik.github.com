@@ -223,10 +223,10 @@ shut down, i'm afraid any efforts to make cronus available here would be wasted<
 <br>
 <br>
 <b>konsole ten</b><br>
-<br>
+for lack of anything better, if there's nothing else going on, i run c;<a href="">tv</a> in ten<br>
 <br>
 <b>konsole eleven</b><br>
-<br>
+i like to run a <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ca">ca</a> in eleven, which simply lists all awk and sed scripts<br>
 <br>
 <b>konsole twelve</b><br>
 konsole twelve is where i like to make ~/bin current -- first i cd2 (remember all those<br>
@@ -257,14 +257,19 @@ that adds $(pwd) to the beginning of $PATH, because all my vim build scripts are
 next i may just do an <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsb2">hlsb2</a> and move on, or, if bram's been posting patches in vim_dev<br>
 i will start an update/build process without even checking hlsb<br>
 <br>
-the first script run by hlsb2 is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsb">hlsb</a><br>
+the first script run by hlsb2 is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsb">hlsb</a>, which runs both <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlslt">hlslt</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsld">hlsld</a>, making use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ee">ee</a><br>
+along the way -- the purpose of all this is to run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/t">t</a>, which at its core performs an <br>
+'hg incoming' against the vim repository -- all the 'hls_' modules test &quot;how long since&quot;<br>
+the last empty 't' or the last data hit -- i don't want to unduly stress the server, especially<br>
+when there's no cause to believe any patches have been uploaded, so my rule is to not<br>
+'t' any more often than once every 10 hours<br>
 <br>
+if there are patches, i start an xterm from konsole 17 so the $(pwd) and $PATH will be<br>
+set for me already -- in that xterm i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/tfu">tfu</a>, which starts a 'tail -f' on my update.log -- i<br>
+arrange the xterm so i can watch it when i alt-tab back to konsole 17, where i start the<br>
+update process<br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a><br>
 <br>
 <b>konsole eighteen</b><br>
 <br>
