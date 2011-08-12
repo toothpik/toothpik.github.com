@@ -131,14 +131,6 @@ konsole four is for budgeting -- here i track my checking account, reconcile, an
 the future -- the script i use the most for displaying it is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m">m</a> -- i've no idea why i called it 'm', but<br>
 that's its name, i'm used to it, and there's no reason to change it now<br>
 <br>
-i actually should have started with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m2">m2</a>, since i usually run it first before m -- first m2 runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/uclro">uclro</a>,<br>
-which cats the current plan through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/uclearo.awk">uclearo.awk</a> for the purpose of finding and displaying<br>
-transactions with an 'x' in the past/future field but no date in the clear-date field -- with its<br>
-FIELDWIDTHS feature awk is well suited for working with data of this nature -- m2 then pipes<br>
-the uclro output through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sumlwq.awk">sumlwq.awk</a> in order to sum the transaction amounts of all<br>
-unclear transactions -- combining <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lastx">lastx</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/lastx.awk">lastx.awk</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/balamt.awk">balamt.awk</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/solve">solve</a> (my favorite commandline<br>
-calculator), and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/ciaa.awk">ciaa.awk</a> m2 is able to display the sum of unclear trans, the balance amount<br>
-for the last transaction with an 'x', and the reconciliation amount<br>
 <br>
 i have defined fiscal months as starting on the 23rd and ending on the 22nd -- that way there's<br>
 a full week of lead time for transactions targeted for the 1st, and the month starts off clean<br>
@@ -160,6 +152,17 @@ the plan_yyyy data modules have a very specific <a href="https://github.com/toot
 sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/plan.vim">plan.vim</a> as it calls up the module -- any of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planfood">planfood</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planbal">planbal</a>, or <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planrecon">planrecon</a> may be<br>
 invoked by different &lt;Leader&gt; mappings defined in plan.vim<br>
 <br>
+m's brother <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m2">m2</a> displays information from the current plan, like m, but m2 restricts itself to<br>
+unclear transactions -- first m2 runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/uclro">uclro</a>, which cats the current plan through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/uclearo.awk">uclearo.awk</a><br>
+for the purpose of finding and displaying transactions with an 'x' in the past/future field but<br>
+no date in the clear-date field -- with its FIELDWIDTHS feature awk is well suited for working<br>
+with data of this nature -- m2 then pipes the uclro output through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sumlwq.awk">sumlwq.awk</a> in order to<br>
+sum the transaction amounts of all unclear transactions -- combining <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lastx">lastx</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/lastx.awk">lastx.awk</a>,<br>
+<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/balamt.awk">balamt.awk</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/solve">solve</a> (my favorite commandline calculator), and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/ciaa.awk">ciaa.awk</a> m2 is able to display<br>
+the sum of unclear trans, the balance amount for the last transaction with an 'x', and the<br>
+reconciliation amount -- these display nicely under an m display, and serve to tell me if<br>
+there might be transaction clear dates on my bank's web site<br>
+<br>
 when it's time, i make the next year's plan using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/plannew">plannew</a>, a bash script that combines a<br>
 tcl <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/plannew">core</a>, two python scripts, and five perl scripts, most of which are tailored to my specific<br>
 needs, with the exception of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/plandsh">plandsh</a> which puts a line of dashes between months at the<br>
@@ -180,7 +183,7 @@ everything in the current buffer except lines containing whatever's in '@/'<br>
 <br>
 <b>konsole five</b><br>
 konsole five gets to display the &quot;head before equal&quot; of my visa charges module<br>
-using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/hbev">hbev</a> which makes use of two awk scripts,<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sae.awk">sae.awk</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sbl.awk">sbl.awk</a><br>
+using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/hbev">hbev</a> which makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sae.awk">sae.awk</a><br>
 <br>
 sorry -- i'm no more inclined to share a picture of this in action than i was in konsole<br>
 four<br>
