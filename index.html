@@ -325,41 +325,19 @@ there are three main scripts to update:  <a href="https://github.com/toothpik/to
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <!--
-<h4>countdown section</h4>
-<br>
-<br>
-i have created 5 scripts, which create countdowns in different ways:<br>
-all of the ctdn scripts write to sysout, which can be easily redirected to a file or pipe, or pulled into<br>
-a vim session with :r!ctdn...<br>
-<br>
-both #1 and #3 can handle negatives:  for #1, if the date provided is prior to today, it will count down<br>
-from [date] to today - if the count given to ctdn3 is negative, it starts [count] days ago counting to today<br>
-<br>
-i keep these on my ~/py path, with symbolic links pointing to them from my ~/bin path<br>
-<br>
-the gui, <a href="py/mcdl">mcdl</a>, pulls all 5 scripts together with radio buttons and edit boxes - this is my first attempt<br>
-at tcl/tk, so don't expect too much - here's a <a href="mcdl_screenshot.png">screenshot</a><br>
-<br>
-i use <a href="bin/showbooks">showbooks</a> to keep track of my library books<br>
-<br>
-<h4>build section</h4>
-i usually check for a new vim patch level every day - none of my scripts are unusual or ground-breaking, but<br>
-may be of interest to some<br>
-<br>
-i start with a bash shell, konsole<br>
-<br>
-by virtue of the<br>
-<pre>
-    alias cd7='cd ~/.build/hgvim'
-</pre>
-in my ~/.bashrc (i am big on directory changing aliases) it is easy to get to the vim build path<br>
-<br>
-to help with the occasional brain flatulation i sometimes run my little cheat sheet script <a href=".build/vim/inst">inst</a><br>
-(think &quot;instructions&quot;) which provides a brief description for most of the executables on the build path<br>
-<br>
-since bram moved us to mercurial for vim 7.3 i've started a new build path for vim i call ~/.build/hgvim<br>
-<br>
 i use <a href=".build/vim/t">t</a> to &quot;test&quot; the repository for updates - this script performs at heart an &quot;hg incoming&quot; - it tests<br>
 the result of the incoming command to determine whether or not changes are available, and logs the result in<br>
 one of two logs:  the spare-incoming.log is for the &quot;no changes found&quot; attempts, and the incoming.log<br>
