@@ -92,6 +92,17 @@ updated after midnight with a &lt;Leader&gt;c<br>
 further, each knows how to position itself above a konsole, giving a nice <a href="work.png">workable desktop</a><br>
 <br>
 <br>
+<h4>countdown section</h4>
+it seems natural to mention countdowns after calendars, so here are the 5 main ones:<br>
+<pre>
+     1) <a href="py/ctdn.py">ctdn</a>:   takes one date - count down to [date] from current date
+     2) <a href="py/ctdn2.py">ctdn2</a>:  takes two dates - count from the first date to the second
+     3) <a href="py/ctdn3.py">ctdn3</a>:  takes a count - count down from today [count] days
+     4) <a href="py/ctdn4.py">ctdn4</a>:  takes a count and a from-date - count down [count] days from [from-date]
+     5) <a href="py/ctdn5.py">ctdn5</a>:  takes a count and a to-date - count down [count] days to [to-date]
+</pre>
+<br>
+<br>
 <h4>konsole section</h4><br>
 i've become a huge fan of konsole over the years, using it for almost everything -- with a selection<br>
 of directory changing aliases in my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.bashrc">.bashrc</a> i can navigate faster than i can with the mouse in<br>
@@ -316,20 +327,9 @@ there are three main scripts to update:  <a href="https://github.com/toothpik/to
 <br>
 <!--
 <h4>countdown section</h4>
-technically, the countdown modules do not belong on my vim page - they are bash scripts, python, awk,<br>
-and tcl/tk - well - i created them using vim, and i pull countdowns into vim sessions so much i think<br>
-of them as vim entities<br>
 <br>
-besides, i don't have a bash/python/awk/tcl/tk page<br>
 <br>
 i have created 5 scripts, which create countdowns in different ways:<br>
-<pre>
-     1) <a href="py/ctdn.py">ctdn</a>:   takes one date - count down to [date] from current date
-     2) <a href="py/ctdn2.py">ctdn2</a>:  takes two dates - count from the first date to the second
-     3) <a href="py/ctdn3.py">ctdn3</a>:  takes a count - count down from today [count] days
-     4) <a href="py/ctdn4.py">ctdn4</a>:  takes a count and a from-date - count down [count] days from [from-date]
-     5) <a href="py/ctdn5.py">ctdn5</a>:  takes a count and a to-date - count down [count] days to [to-date]
-</pre>
 all of the ctdn scripts write to sysout, which can be easily redirected to a file or pipe, or pulled into<br>
 a vim session with :r!ctdn...<br>
 <br>
