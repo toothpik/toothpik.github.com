@@ -291,117 +291,40 @@ set for me already -- in that xterm i run <a href="https://github.com/toothpik/t
 arrange the xterm so i can watch it when i alt-tab back to konsole 17, where i start the<br>
 update process<br>
 <br>
-there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a><br>
+there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a> -- u2 makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/cs">cs</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/lft.awk">lft.awk</a><br>
+to determine what to merge<br>
+<br>
+<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/m">m</a> makes vim, but if somehow configure got triggered i'll cancel it and run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/myconfig">myconfig</a><br>
+so buildsize and compiledby get defined -- it is finding GTK2 with no help from me<br>
+<br>
+and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/i">sudo i</a> installs<br>
 <br>
 <b>konsole eighteen</b><br>
-<br>
+of late i am using the eighteenth konsole to cdt to my ~/toothpik-s-.vimrc path and<br>
+build my .vimrc share site -- here is where i'll run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cfd">cfd</a> to check for differences in the<br>
+relevant files<br>
 <br>
 <b>konsole nineteen</b><br>
-<br>
+in nineteen i cdtt to ~/toothpik.github.com, edit the page with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/gn">gn index.html</a> (gvim<br>
+with numbers), ',f' to open up the <a href="">filestocheck</a> module, and i'm off and running<br>
 <br>
 <b>konsole twenty</b><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--
-i use <a href=".build/vim/t">t</a> to &quot;test&quot; the repository for updates - this script performs at heart an &quot;hg incoming&quot; - it tests<br>
-the result of the incoming command to determine whether or not changes are available, and logs the result in<br>
-one of two logs:  the spare-incoming.log is for the &quot;no changes found&quot; attempts, and the incoming.log<br>
-is for queries that report new changesets available<br>
-<br>
-since the last merge, tag tip and branch vim73 no longer reside in the same changeset, so i have re-written my changeset<br>
-finder <a href=".build/vim/cs">cs</a> to look, using <a href=".build/vim/lft.awk">lft.awk</a>, for tag tip only<br>
-<br>
-<a href=".build/vim/cbl">cbl</a> is a cute script that uses the bash paste command to display a screenful of tails of both<br>
-spare-incoming and incoming logs side by side - you'll want a shell with at least 105 columns to use it<br>
-<br>
-the spare-incoming.log is mind-numbingly repetitive so i wrote <a href=".build/vim/jtfm">jtfm</a> to show the timestamps only -<br>
-it is used by cbl<br>
-<br>
-the scripts that actually update my local repository all start with &quot;u&quot;:<br>
+in twenty i usually do something silly like<br>
 <pre>
-    <a href=".build/vim/u">u</a>   -  hg pull
-    <a href=".build/vim/u2">u2</a>  -  hg merge $@
-    <a href=".build/vim/u3">u3</a>  -  hg commit $@
-</pre>
-<br>
-and usually the way i run u2 is with <pre>`cs`</pre> as an argument<br>
-<br>
-my build script is a pretty straightforward <a href=".build/vim/m">m</a>, and i like to watch it run in case configure is triggered by<br> the process - if it is i cancel it and run <a href=".build/vim/myconfig">myconfig</a> which has my size and compiledby options (it is finding<br>
-GTK2 on its own)<br>
-<br>
-install is equally unsurprising, performed with a <a href=".build/vim/i">sudo i</a><br>
-<br>
-some of the other things mentioned in <a href=".build/vim/inst">inst</a>:<br>
-<pre>
-    <a href=".build/vim/sfs">sfs</a>  -  a handy cheat-sheet on how to start from scratch
+    c;fortune
 </pre>
 <br>
 <br>
 <br>
-another member of my suite of build tools is <a href="bin/rcfnn">rcfnn</a>, the purpose of which is to compare<br>
-my netrw version number with the one on charles' site, and if his is different, bring his down and prepare to<br>
-install it (after saving the old one of course)<br>
-<br>
-rcfnn inspired <a href="bin/rcfnb">rcfnb</a>, which checks for a new bufexplorer,<br>
-and after that <a href="bin/rcfnc">rcfnc</a> was inevitable - it checks for a new csapprox<br>
-unable to stop myself, i next created <a href="bin/rcfnbi">rcfnbi</a> to check for a newer biogoo<br>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<a href="bin/gvc">gvc</a><br>
 <br>
 <br>
 <br>
-<a href="bin/gvl">gvl</a><br>
-<br>
-<br>
-<br>
-<br>
-<br>
--->
 </body>
 </html>
 
