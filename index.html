@@ -30,13 +30,13 @@ and bash, awk, grep, sed, and all the rest<br>
 my lastest inclination has been to build an interpreter free vim, ie no python, tcl, perl,<br>
 ruby, or any external languages linked in -- mainly this is a tactic in the quicker<br>
 &quot;enter-to-running&quot; war -- it is also backed with the understanding that if you want to do<br>
-something to your buffer in another language you can write a vim function to save your buffer,<br>
-then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;<br>
+something to your buffer in another language you can write a vim function to save your<br>
+buffer, then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;<br>
 <br>
 here's my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vimrc">.vimrc</a>, as it existed at at least one point in time<br>
 <br>
-one script used in my .vimrc is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/currmo">currmo</a> -- its output is read into the current buffer in the Acdmo()<br>
-function, which i've mapped to &lt;S-F7&gt; -- here's a <a href="currmo.png">screenshot</a><br>
+one script referenced in my .vimrc is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/currmo">currmo</a> -- its output is read into the current buffer in the<br>
+Acdmo() function, which i've mapped to &lt;S-F7&gt; -- here's a <a href="currmo.png">screenshot</a><br>
 <br>
 and here is the bash script i call <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cabv">cabv</a> i use to save vimrc in my .vim path with a date appended<br>
 to its name<br>
@@ -86,7 +86,7 @@ command prompt, and which uses <a href="https://github.com/toothpik/toothpik-s-.
 the requisite picture of <a href="laundry.png">snls at work</a><br>
 <br>
 i invoke all three calendars with a single <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ws">ws</a> (think workspace), and each is coded so they can be<br>
-updated after midnight with by running <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wsc">wsc</a><br>
+updated after midnight by running <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wsc">wsc</a><br>
 <br>
 further, each knows how to position itself above a konsole, giving a nice <a href="work.png">workable desktop</a><br>
 <br>
@@ -123,23 +123,14 @@ space wasting decorations<br>
 <b>konsole one</b><br>
 a recent openSUSE upgrade disaster rendered kmail inoperable so i've returned to my true love, mutt --<br>
 since email is of prime importance to me, i either run mutt in konsole one, or the status display cccr<br>
-which i've already mentioned in the context of having calendars at the top of the window -- cccr runs<br>
-<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> to display current mail folders, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> to display the time fetchmail will next attempt<br>
-a fetch<br>
+which i've already mentioned -- cccr runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> to display current mail folders, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> to<br>
+display the time fetchmail will next attempt a fetch<br>
 <br>
 here's a <a href="cccr.png">picture</a> of cccr in action (in a &quot;long&quot; konsole)<br>
 <br>
-<br>
-<br>
-<br>
-there are specific things i like to have in each konsole, and the first one is the weather -- i invoke it<br>
-with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cw">cw</a> (think &quot;cat weather&quot;) -- cw invokes the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/cw">cw</a> on the tcl path and the output looks like <a href="weather.png">this</a> --<br>
-if i want to see the forecast further into the future, i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wiv">wiv</a> so i can scroll around or play with<br>
-highlighting -- as always, wiv calls something else, this time it's <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weather.vim">weather.vim</a><br>
-<br>
 <b>konsole two</b><br>
-here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tc">tc</a> (think &quot;TODO calendar&quot;) -- tc calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcnlc">tcnlc</a>, which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/fcdit.awk">fcdit.awk</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">tocal</a> resulting in<br>
-an extract from my calendar being <a href="tc.png">output</a> to the command line with current date flagged<br>
+here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tc">tcc2</a> -- tcc2 calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcnlc2">tcnlc2</a>, which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/bcdit">bcdit</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/trimc">trimc</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">tocal</a> resulting in an extract<br>
+from my calendar being <a href="tc.png">output</a> to the command line with current date flagged<br>
 <br>
 i create years for tocal with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crt_tocal">crt_tocal</a> and i edit it with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tocal">tocal</a> which sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/tocal.vim">tocal.vim</a> (which in turn<br>
 sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/fcd.vim">fcd.vim</a>) so it can find and highlight current date<br>
@@ -225,6 +216,19 @@ sorry -- i'm no more inclined to share a picture of this in action than i was in
 four<br>
 <br>
 <b>konsole six</b><br>
+konsole six is for the weather forecast -- i invoke it<br>
+with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cw">cw</a> (think &quot;cat weather&quot;) -- cw invokes the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/cw">cw</a> on the tcl path and the output looks like <a href="weather.png">this</a> --<br>
+if i want to see the forecast further into the future, i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wiv">wiv</a> so i can scroll around or play with<br>
+highlighting -- as always, wiv calls something else, this time it's <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weather.vim">weather.vim</a><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 i think of konsole six as my sun and moon window -- here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sam">sam</a> to display<br>
 summary statistics for both bodies -- i'll start with a <a href="sam.png">screenshot</a> so you'll have some<br>
 idea what i'm talking about as i describe it -- sam runs both sun and moon tables for<br>
