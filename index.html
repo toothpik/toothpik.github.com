@@ -136,22 +136,33 @@ i create years for tocal with <a href="https://github.com/toothpik/toothpik-s-.v
 (which in turn sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/fcd.vim">fcd.vim</a> so it can find and highlight current date)<br>
 <br>
 <b>konsole three</b><br>
-in my third konsole tab i like to have the output from <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cct">cct</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/b22">b22</a> displayed together -- cct invokes<br>
-<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ct0">ct0</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/ct_list">ct_list</a> using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/realstuff">realstuff</a>/<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/realstuff.awk">realstuff.awk</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/ct0">tcl/ct0</a> which calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/jctd">jctd</a> in order to produce day<br>
-counts (from today) for the various dates in ct_list -- all gets piped through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/incend.awk">incend.awk</a> to verify<br>
-the dates are in ascending order<br>
+in my third konsole i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ccct">ccct</a>, my countdown reminder module -- some of the scripts triggered by<br>
+ccct include:<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cct">cct</a> - combines bin/ct0, tcl/ct0, and incend.awk to produce the list<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/laundry2">laundry2</a> - specialized laundry reporter that reports only day counts &gt; 6<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ct0">ct0</a> - uses realstuff to cat the dates into nl<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/ct_list">ct_list</a> - the list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/realstuff">realstuff</a> - generic &quot;realstuff&quot; text extractor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/ct0">tcl/ct0</a> - calls jctd to obtain the counts<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/jctd">jctd</a> - generic day counter<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/incend.awk">incend.awk</a> - verifies the dates are in ascending order<br>
 <br>
 frequently i will use <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/jatc">jatc</a> to calculate a date needed for ct_list<br>
 <br>
+a recent run of ccct looked like <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/ccct/png">this</a><br>
+<br>
+<!-- batteries are moving to konsole 7, now displayed with bin/ba 
 b22 is a specialized version of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/b2">b2</a> which reads <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/batlist">batlist</a>, the module in which i record important<br>
-battery replacements -- with this system the batteries in the thermostat never die, and i never pick<br>
-up a remote or flashlight that has dead batteries -- with these yearly replacements, i always have a<br>
-good supply of &quot;used&quot; batteries for my cordless mouse and every-day-carry flashlight -- batlist gets<br>
-piped through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/batlist">tcl/batlist</a> which also calls jctd to produce day counts -- i keep b22 pointed at the<br>
+battery replacements - with this system the batteries in the thermostat never die, and i never pick<br>
+up a remote or flashlight that has dead batteries - with these yearly replacements, i always have a<br>
+good supply of &quot;used&quot; batteries for my cordless mouse and every-day-carry flashlight - batlist gets<br>
+piped through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/batlist">tcl/batlist</a> which also calls jctd to produce day counts - i keep b22 pointed at the<br>
 oldest batteries in the list, which are the most important to watch<br>
 <br>
 when combined, cct and b22 look like <a href="cct_b22.png">this</a><br>
 <br>
+-->
 <b>konsole four</b><br>
 konsole four is for budgeting -- here i track my checking account, reconcile, and project it into<br>
 the future -- the script i use the most for displaying it is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m">m</a> -- i've no idea why i called it 'm', but<br>
