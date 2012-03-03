@@ -29,7 +29,7 @@ and bash, awk, grep, sed, and all the rest<br>
 <br>
 my lastest inclination has been to build an interpreter free vim, ie no python, tcl, perl,<br>
 ruby, or any external languages linked in -- mainly this is a tactic in the quicker<br>
-&quot;enter-to-running&quot; war -- it is also backed with the understanding that if you want to do<br>
+&quot;enter-to-running&quot; war - it is also backed with the understanding that if you want to do<br>
 something to your buffer in another language you can write a vim function to save your<br>
 buffer, then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;<br>
 <br>
@@ -55,9 +55,7 @@ on me<br>
 <h4>calendar section</h4>
 my first calendar is a small reminder of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/weekly">weekly</a> chores, coded so the current day of week is always<br>
 highlighted and in the middle with three days above and three days below -- i accomplish this by<br>
-copying my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/weekly">txt/weekly</a> module into a /tmp file twice -- that way when i source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weekly.vim">.vim/weekly.vim</a> on it,<br>
-it can always find the current day of week with three days on either side of it -- in addition i am spared<br>
-the indignity of having to keep a 14 row txt/module with resulting double entries necessary<br>
+filtering <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/weekly">the source text</a> through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wkly2">wkly2</a> and then source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weekly.vim">.vim/weekly.vim</a> on the result<br>
 <br>
 i should probably mention at this point i have a symbolic link in my ~/bin path called <b>g</b> that points<br>
 to gvim -- it's eminently easier to type than gvim, and yes, i have one called <b>v</b> that points to vim<br>
@@ -85,8 +83,8 @@ command prompt, and which uses <a href="https://github.com/toothpik/toothpik-s-.
 <br>
 the requisite picture of <a href="laundry.png">snls at work</a><br>
 <br>
-i invoke all three calendars with a single <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ws">ws</a> (think workspace), and each is coded so they can be<br>
-updated after midnight by running <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wsc">wsc</a><br>
+i invoke all three calendars with a single <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ws">ws</a> (think workspace), and is coded so they can be updated<br>
+after midnight by running it again - they can all be brought down by running <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wsd">wsd</a><br>
 <br>
 further, each knows how to position itself above a konsole, giving a nice <a href="work.png">workable desktop</a><br>
 <br>
@@ -162,6 +160,10 @@ oldest batteries in the list, which are the most important to watch<br>
 <br>
 when combined, cct and b22 look like <a href="cct_b22.png">this</a><br>
 <br>
+-->
+<!-- 
+    i need to pick it up here
+    'm' is no longer what i usually use on 4, m1 is
 -->
 <b>konsole four</b><br>
 konsole four is for budgeting -- here i track my checking account, reconcile, and project it into<br>
