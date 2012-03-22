@@ -18,7 +18,7 @@ A:visited{color:light-blue}
 </head>
 <body>
 <h1>toothpik's vim page</h1>
-this is not a site on what vim is, or how to use it -- if you find yourself here with either of those<br>
+this is not a site on what vim is, or how to use it - if you find yourself here with either of those<br>
 things in mind, go to the <a href="http://vim.sourceforge.net">vim homepage</a><br>
 <br>
 this page is more about how to have fun with vim than anything, or at least how i have fun with it<br>
@@ -28,15 +28,16 @@ it's also about how to have fun with python and tcl and perl<br>
 and bash, awk, grep, sed, and all the rest<br>
 <br>
 my lastest inclination has been to build an interpreter free vim, ie no python, tcl, perl,<br>
-ruby, or any external languages linked in -- mainly this is a tactic in the quicker<br>
+ruby, or any external languages linked in - mainly this is a tactic in the quicker<br>
 &quot;enter-to-running&quot; war - it is also backed with the understanding that if you want to do<br>
 something to your buffer in another language you can write a vim function to save your<br>
-buffer, then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;<br>
+buffer, then call the script with system(), or :r!&lt;scriptname&gt;, or :[range]!&lt;scriptname&gt;,<br>
+or uncounted dozens of other ways<br>
 <br>
 here's my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vimrc">.vimrc</a>, as it existed at at least one point in time<br>
 <br>
-one script referenced in my .vimrc is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/currmo">currmo</a> -- its output is read into the current buffer in the<br>
-Acdmo() function, which i've mapped to &lt;S-F7&gt; -- here's a <a href="currmo.png">screenshot</a><br>
+one script referenced in my .vimrc is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/currmo">currmo</a> - its output is read into the current buffer in the<br>
+Acdmo() function, which i've mapped to &lt;S-F7&gt; - here's a <a href="currmo.png">screenshot</a><br>
 <br>
 and here is the bash script i call <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cabv">cabv</a> i use to save vimrc in my .vim path with a date appended<br>
 to its name<br>
@@ -47,50 +48,50 @@ harddrive and what's been uploaded to github<br>
 <br>
 <br>
 <h4>feline section</h4>
-here i am with my new favorite coding <a href="stubbie2.jpg">companion</a> -- she has a sixth sense that tells her when<br>
-i'm playing shisen-sho so i will be sufficiently sedentary it'd be a good time to come snooze<br>
+here i am with my favorite coding <a href="stubbie2.jpg">companion</a> - she has a sixth sense that tells her when<br>
+i'm playing knetwalk so i will be sufficiently sedentary it'd be a good time to come snooze<br>
 on me<br>
 <br>
 <br>
 <h4>calendar section</h4>
-my first calendar is a small reminder of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/weekly">weekly</a> chores, coded so the current day of week is always<br>
-highlighted and in the middle with three days above and three days below -- i accomplish this by<br>
-filtering <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/weekly">the source text</a> through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wkly2">wkly2</a> and then source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weekly.vim">.vim/weekly.vim</a> on the result<br>
+the first calendar i like on my desktop at the beginning of the day is a small reminder of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/weekly">weekly</a><br>
+chores, coded so the current day of week is always highlighted and in the middle with three<br>
+days above and three days below - i accomplish this by filtering <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/weekly">the source text</a> through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wkly2">wkly2</a><br>
+and then source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weekly.vim">.vim/weekly.vim</a> on the result<br>
 <br>
 i should probably mention at this point i have a symbolic link in my ~/bin path called <b>g</b> that points<br>
-to gvim -- it's eminently easier to type than gvim, and yes, i have one called <b>v</b> that points to vim<br>
-(and one called <b>c</b> that points to /usr/bin/clear -- shall i go on?)<br>
+to gvim - it's eminently easier to type than gvim, and yes, i have one called <b>v</b> that points to vim<br>
+(and one called <b>c</b> that points to /usr/bin/clear - shall i go on?)<br>
 <br>
 here is a picture of <a href="weekly.png">weekly</a> in action<br>
 <br>
-my main calendar is a three month calendar arranged horizontally -- i call it <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sacalh">sacalh</a> for<br>
-&quot;stand-alone calendar, horizontal&quot; -- sacalh tells gvim to source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/mmatc.vim">mmatc.vim</a>, which reads the<br>
-output from <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cm1p1">cm1p1</a> into a hidden buffer<br>
+my main calendar is a three month calendar arranged horizontally - i call it <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sacalh">sacalh</a> for<br>
+&quot;stand-alone calendar, horizontal&quot; - sacalh tells gvim to source <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/mmatc.vim">mmatc.vim</a>, which reads the<br>
+output from <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cm1p1">cm1p1</a> into a hidden gvim buffer and arranges the window size and position<br>
 <br>
 let the littlest not be forgotten:  here is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/mofix.sed">mofix.sed</a><br>
 <br>
 and this is what sacalh looks like <a href="sacalh.png">in use</a><br>
 <br>
-the third calendar i keep on my desktop -- i might mention here i have 4 desktops, and arrange these<br>
-calendars, plus a monster konsole session, on desktop #1 -- the third calendar started out similar to<br>
-the weekly calendar, and over time morphed into a log reporting tool -- the subject being laundry, the<br>
-need being unlimited flexibility -- i call my laundry caller-upper <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/snls">snls</a> -- if i ever typed it at a command<br>
-prompt (i don't) i would think &quot;show new laundry schedule&quot; as i typed it<br>
+the third calendar i like on my desktop started out similar to the weekly calendar, and over time<br>
+morphed into a log reporting tool - the subject being laundry, the need being unlimited flexibility<br>
+- i call my laundry caller-upper <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/snls">snls</a> - if i ever typed it at a command prompt (i don't) i would think<br>
+&quot;show new laundry schedule&quot; as i typed it<br>
 <br>
-snls invokes gvim on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/snls.vim">snls.vim</a>, which reads the output from <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sll2">sll2</a> into a hidden buffer -- of course, sll2<br>
+snls invokes gvim on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/snls.vim">snls.vim</a>, which reads the output from <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sll2">sll2</a> into a hidden buffer - of course, sll2<br>
 would have nothing to report if it didn't have <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/laundry.log">laundry.log</a> to read which i edit by typing <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/glaun">glaun</a> at any<br>
 command prompt, and which uses <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/laundry.vim">laundry.vim</a> to set some leader commands<br>
 <br>
 the requisite picture of <a href="laundry.png">snls at work</a><br>
 <br>
-i invoke all three calendars with a single <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ws">ws</a> (think workspace), and is coded so they can be updated<br>
+i invoke all three calendars with a single <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ws">ws</a> (think workspace) - it is coded so they can be updated<br>
 after midnight by running it again - they can all be brought down by running <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wsd">wsd</a><br>
 <br>
 further, each knows how to position itself above a konsole, giving a nice <a href="work.png">workable desktop</a><br>
 <br>
-of course, i don't always want a 32 line konsole with a bunch of calendars over it -- some days i stretch<br>
+of course, i don't always want a 32 line konsole with a bunch of calendars over it - some days i stretch<br>
 the konsole window from the bottom to the top of my screen, yeilding a konsole of dimension 105x43, and<br>
-causing me to add code to my &quot;header&quot; scripts as you'll see in <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cccr">cccr</a> to put the three month calendar inside<br>
+causing me to add code to my &quot;header&quot; scripts as you'll see in <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cr">cr</a> to put the three month calendar inside<br>
 konsole<br>
 <br>
 <br>
@@ -103,7 +104,7 @@ it seems natural to mention countdowns after calendars, so here are the 5 main o
      4) <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/ctdn4.py">ctdn4</a>:  takes a count and a from-date - count down [count] days from [from-date]
      5) <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/ctdn5.py">ctdn5</a>:  takes a count and a to-date - count down [count] days to [to-date]
 </pre>
-if the date given to ctdn is prior to today, it will count down from [date] to today --<br>
+if the date given to ctdn is prior to today, it will count down from [date] to today -<br>
 similarly, if the count given to ctdn3 is negative, it will count down from [count] days<br>
 ago to today<br>
 <br>
@@ -111,30 +112,31 @@ ago to today<br>
 <br>
 <br>
 <h4>konsole section</h4><br>
-i've become a huge fan of konsole over the years, using it for almost everything -- with a selection<br>
+i've become a huge fan of konsole over the years, using it for almost everything - with a selection<br>
 of directory changing aliases in my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.bashrc">.bashrc</a> i can navigate faster than i can with the mouse in<br>
-dolphin -- when i first start konsole (using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sk">sk</a>) i run ws, then <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mxm">mxm</a>, which makes &quot;x&quot; more konsole<br>
-tabs, or 19 without an argument -- i don't show the tab labels in konsole, it is so gloriously easy<br>
+dolphin - when i first start konsole (using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sk">sk</a>) i run ws, then <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mxm">mxm</a>, which makes &quot;x&quot; more konsole<br>
+tabs, or 19 without an argument - i don't show the tab labels in konsole, it is so gloriously easy<br>
 to switch between tabs with shift-left and shift-right there's no need for mouse clickable<br>
-space wasting decorations<br>
+space wasting decorations - i almost never use the mouse in konsole anyway - i'm a vimmer, after<br>
+all<br>
 <br>
 <b>konsole one</b><br>
-a recent openSUSE upgrade disaster rendered kmail inoperable so i've returned to my true love, mutt --<br>
-since email is of prime importance to me, in konsole one i run either mutt or the status display cccr<br>
-which i've already mentioned -- cccr runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> to display current mail folders, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> to<br>
+a recent openSUSE upgrade disaster rendered kmail inoperable so i've returned to my true love, mutt -<br>
+since email is of prime importance to me, in konsole one i run either mutt or the status display cr<br>
+which i've already mentioned - cr runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> to display current mail folders, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> to<br>
 display the time fetchmail will next attempt a fetch<br>
 <br>
-here's a <a href="cccr.png">picture</a> of cccr in action (in a &quot;long&quot; konsole)<br>
+here's a <a href="cccr.png">picture</a> of cr in action (in a &quot;long&quot; konsole)<br>
 <br>
 <b>konsole two</b><br>
-here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcc2">tcc2</a> -- tcc2 calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcnlc2">tcnlc2</a>, which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/bcdit">bcdit</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/trimc">trimc</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">tocal</a> resulting in an extract<br>
+here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcc2">tcc2</a> - tcc2 calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcnlc2">tcnlc2</a>, which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/bcdit">bcdit</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/trimc">trimc</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">tocal</a> resulting in an extract<br>
 from my calendar being <a href="tc.png">output</a> to the command line with current date flagged<br>
 <br>
 i create years for tocal with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crt_tocal">crt_tocal</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/adholtt">adholtt</a>, and i edit it with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tocal">tocal</a> which sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/tocal.vim">tocal.vim</a><br>
 (which in turn sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/fcd.vim">fcd.vim</a> so it can find and highlight current date)<br>
 <br>
 <b>konsole three</b><br>
-in my third konsole i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ccct">ccct</a>, my countdown reminder module -- some of the scripts triggered by<br>
+in my third konsole i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ccct">ccct</a>, my countdown reminder module - some of the scripts triggered by<br>
 ccct include:<br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cct">cct</a> - combines bin/ct0, tcl/ct0, and incend.awk to produce the list<br> 
@@ -166,49 +168,73 @@ when combined, cct and b22 look like <a href="cct_b22.png">this</a><br>
     'm' is no longer what i usually use on 4, m1 is
 -->
 <b>konsole four</b><br>
-konsole four is for budgeting -- here i track my checking account, reconcile, and project it into<br>
-the future -- the script i use the most for displaying it is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m">m</a> -- i've no idea why i called it 'm', but<br>
-that's its name, i'm used to it, and there's no reason to change it now<br>
+konsole four is for budgeting - here i track my checking account, reconcile, and project it into the<br>
+future - over the years i've used a variety of spreadsheets to store this data, and have repeatedly<br>
+been frustrated by upgrades to the software making my older data difficult to get to - the answer<br>
+i've come to embrace is ascii text - i cannot imagine a time when text is unreadable - ok, yes, i can<br>
+if i stray into disaster science fiction, but if we get to that point we won't have banks and checking<br>
+accounts anyway - whether the scripting language that reads it evolves is irrelevant - the data is<br>
+the important thing, and text is the most universally readable format available<br>
 <br>
-i have defined fiscal months as starting on the 23rd and ending on the 22nd -- that way there's<br>
+by formatting the data in specific columns i enable a variety of languages easy access to it - the<br>
+FIELDWIDTHS feature of awk springs to mind, but every language i know can parse lines of a known<br>
+format<br>
+<br>
+copying my last spreadsheet i defined the format for what i refer to as the <b>plan</b> modules as<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 1 - cc1-5 - date of transaction, format m/d<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 2 - cc7-9 - type of transaction<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 3 - cc11-40 - description (name of merchant)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 4 - cc42-43 - requested clear date for online transactions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 5 - cc45-46 - actual clear date<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 6 - cc48-57 - transaction amount<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 7 - cc60 - blank for future, 'x' for past<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 8 - cc62-70 - balance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 9 - cc72-80 - reconciliation amount<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column 10 - cc82-86 - reconciliation date<br>
+<br>
+i have defined fiscal months as starting on the 23rd and ending on the 22nd - that way there's<br>
 a full week of lead time for transactions targeted for the 1st, and the month starts off clean<br>
-with the first transactions first -- that's my take on it, it's my system, so i get to decide<br>
+with the first transactions first - that's my take on it, it's my system, so i get to decide<br>
+<br>
+the script i use the most for displaying it is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m1">m1</a>, which uses <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/curpmo">curpmo</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/curmo.awk">curmo.awk</a> to determine<br>
+the current month to be displayed by <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m12">m12</a><br>
 <br>
 m uses a variable combination of mYY modules to display the relevant portion of my account, for<br>
 example:<br>
 <pre>
     { m11 8; m11 9 } | head -31
 </pre>
-will display august and most of september for 2011 -- m starts by running the entire year (<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m11">m11</a>)<br>
+will display august and most of september for 2011 - m starts by running the entire year (<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m11">m11</a>)<br>
 through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/funclear.awk">funclear.awk</a> in order to determine whether the first unclear transaction occurs in the<br>
-same or the previous fiscal month -- with this information it can design the most relevant display<br>
+same or the previous fiscal month - with this information it can design the most relevant display<br>
 using two of<br>
  - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan1.sed">plan1.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan2.sed">plan2.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan3.sed">plan3.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan4.sed">plan4.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan5.sed">plan5.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan6.sed">plan6.sed</a><br>
  - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan7.sed">plan7.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan8.sed">plan8.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan9.sed">plan9.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan10.sed">plan10.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan11.sed">plan11.sed</a> - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan12.sed">plan12.sed</a><br>
 <br>
 the plan_yyyy data modules have a very specific <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_format">format</a>, and i edit them by invoking <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/gp">gp</a>, which<br>
-sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/plan.vim">plan.vim</a> as it calls up the module -- any of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planfood">planfood</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planbal">planbal</a>, or <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planrecon">planrecon</a> may be<br>
+sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/plan.vim">plan.vim</a> as it calls up the module - any of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planfood">planfood</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planbal">planbal</a>, or <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/planrecon">planrecon</a> may be<br>
 invoked by different &lt;Leader&gt; mappings defined in plan.vim<br>
 <br>
 m's brother <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m2">m2</a> displays information from the current plan, like m, but m2 restricts itself to<br>
-unclear transactions -- first m2 runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/uclro">uclro</a>, which cats the current plan through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/uclearo.awk">uclearo.awk</a><br>
+unclear transactions - first m2 runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/uclro">uclro</a>, which cats the current plan through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/uclearo.awk">uclearo.awk</a><br>
 for the purpose of finding and displaying transactions with an 'x' in the past/future field but<br>
-no date in the clear-date field -- with its FIELDWIDTHS feature awk is well suited for working<br>
-with data of this nature -- m2 then pipes the uclro output through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sumlwq.awk">sumlwq.awk</a> in order to<br>
-sum the transaction amounts of all unclear transactions -- combining <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lastx">lastx</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/lastx.awk">lastx.awk</a>,<br>
+no date in the clear-date field - with its FIELDWIDTHS feature awk is well suited for working<br>
+with data of this nature - m2 then pipes the uclro output through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sumlwq.awk">sumlwq.awk</a> in order to<br>
+sum the transaction amounts of all unclear transactions - combining <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lastx">lastx</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/lastx.awk">lastx.awk</a>,<br>
 <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/balamt.awk">balamt.awk</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/solve">solve</a> (my favorite commandline calculator), and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/ciaa.awk">ciaa.awk</a> m2 is able to display<br>
 the sum of unclear trans, the balance amount for the last transaction with an 'x', and the<br>
-reconciliation amount -- these display nicely under an m display, and serve to tell me if<br>
+reconciliation amount - these display nicely under an m display, and serve to tell me if<br>
 there might be transaction clear dates on my bank's web site<br>
 <br>
 when it's time, i make the next year's plan using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/plannew">plannew</a>, a bash script that combines a<br>
 tcl <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/plannew">core</a>, two python scripts, and five perl scripts, most of which are tailored to my specific<br>
 needs, with the exception of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/plandsh">plandsh</a> which puts a line of dashes between months at the<br>
-end of the series -- driving all this is the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_core">plan_core</a> which is described in the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_readme">plan_readme</a> --<br>
-of note is the last line in the core with description &quot;food &amp; atm&quot; -- the more accurate you<br>
-can be in estimating this important item the closer your future projections will be to reality --<br>
+end of the series - driving all this is the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_core">plan_core</a> which is described in the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_readme">plan_readme</a> -<br>
+of note is the last line in the core with description &quot;food &amp; atm&quot; - the more accurate you<br>
+can be in estimating this important item the closer your future projections will be to reality -<br>
 a powerful tool in the quest for accurate food/atm estimates is a collaberation between <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lfy">lfy</a><br>
-(last fiscal year) and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mft">mft</a> (make food totals) -- as<br>
+(last fiscal year) and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mft">mft</a> (make food totals) - as<br>
 <pre>
     lfy | mft
 </pre>
@@ -217,7 +243,7 @@ and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/perl/cfm"
 <br>
 another tool that can be used to aid in estimating gas, electric, or other seasonal bills is<br>
 to pipe lfy into <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ghs">ghs</a>, then in gvim locate the merchant of interest with '/' or '*' or even<br>
-:let @/ = 'merchant of interest', then hit ',o' -- i currently use comma as my Leader for<br>
+:let @/ = 'merchant of interest', then hit ',o' - i currently use comma as my Leader for<br>
 mappings, and &lt;Leader&gt;o is mapped to a powerful fold expression that folds away<br>
 everything in the current buffer except lines containing whatever's in '@/'<br>
 <br>
@@ -225,14 +251,14 @@ everything in the current buffer except lines containing whatever's in '@/'<br>
 konsole five gets to display the &quot;head before equal&quot; of my visa charges module<br>
 using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/hbev">hbev</a> which makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/sae.awk">sae.awk</a><br>
 <br>
-sorry -- i'm no more inclined to share a picture of this in action than i was in konsole<br>
+sorry - i'm no more inclined to share a picture of this in action than i was in konsole<br>
 four<br>
 <br>
 <b>konsole six</b><br>
-konsole six is for the weather forecast -- i invoke it<br>
-with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cw">cw</a> (think &quot;cat weather&quot;) -- cw invokes the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/cw">cw</a> on the tcl path and the output looks like <a href="weather.png">this</a> --<br>
+konsole six is for the weather forecast - i invoke it<br>
+with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cw">cw</a> (think &quot;cat weather&quot;) - cw invokes the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/cw">cw</a> on the tcl path and the output looks like <a href="weather.png">this</a> -<br>
 if i want to see the forecast further into the future, i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wiv">wiv</a> so i can scroll around or play with<br>
-highlighting -- as always, wiv calls something else, this time it's <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weather.vim">weather.vim</a><br>
+highlighting - as always, wiv calls something else, this time it's <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/weather.vim">weather.vim</a><br>
 <br>
 <br>
 <br>
@@ -242,24 +268,24 @@ highlighting -- as always, wiv calls something else, this time it's <a href="htt
 <br>
 <br>
 <br>
-i think of konsole six as my sun and moon window -- here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sam">sam</a> to display<br>
-summary statistics for both bodies -- i'll start with a <a href="sam.png">screenshot</a> so you'll have some<br>
-idea what i'm talking about as i describe it -- sam runs both sun and moon tables for<br>
+i think of konsole six as my sun and moon window - here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sam">sam</a> to display<br>
+summary statistics for both bodies - i'll start with a <a href="sam.png">screenshot</a> so you'll have some<br>
+idea what i'm talking about as i describe it - sam runs both sun and moon tables for<br>
 the current year through <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/fcdwd.awk">fcdwd.awk</a> in order to flag the current date with '&lt;---',<br>
-giving grep a context to work with -- <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sun">sun</a> generates the sun side of the paste, and<br>
+giving grep a context to work with - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/sun">sun</a> generates the sun side of the paste, and<br>
 <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mo">mo</a> produces the moon side<br>
 <br>
-the real fun here was in generating the tables in the first place -- years ago in my<br>
+the real fun here was in generating the tables in the first place - years ago in my<br>
 searches i came across a site called astrolabe and i found a script there that accepted<br>
-lat and long parameters in the quest to generate more accurate tables -- the site is<br>
+lat and long parameters in the quest to generate more accurate tables - the site is<br>
 gone, but may have morphed into the conquestofspace project on sourceforge, i am not<br>
-at all sure -- i have a script that's been generating beautiful tables for years, so i am<br>
+at all sure - i have a script that's been generating beautiful tables for years, so i am<br>
 undermotivated to set up a web server and install this new application just to see if i<br>
 i can make it do anything<br>
 <br>
 the script is called cronus.py, and because it imports from about a dozen other<br>
 modules from the original package i will not attempt to share it here unless and<br>
-until someone expresses an interest -- i've tweaked it to accomodate new rules for<br>
+until someone expresses an interest - i've tweaked it to accomodate new rules for<br>
 DST, so i won't be sharing the original<br>
 <br>
 email me at toothpik at nospam swbell dot net (without the admonition) if you do<br>
@@ -277,27 +303,27 @@ shut down, i'm afraid any efforts to make cronus available here would be wasted<
 <br>
 -->
 <b>konsole ten</b><br>
-for lack of anything better, if there's nothing else going on, i run c;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tv">tv</a> in ten --<br>
+for lack of anything better, if there's nothing else going on, i run c;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tv">tv</a> in ten -<br>
 makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/fcda.awk">fcda.awk</a> to flag current weekday<br>
 <br>
 <b>konsole eleven</b><br>
-i like to run a <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ca">ca</a> in eleven, which simply lists all awk and sed scripts -- i created a<br>
+i like to run a <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ca">ca</a> in eleven, which simply lists all awk and sed scripts - i created a<br>
 <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/Readme">Readme</a> on ~ as a memory aid, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crdme">crdme</a>, which, because $HOME is current<br>
 performs a specialized comparison of the Readme and the awk and sed<br>
 <br>
 <b>konsole twelve</b><br>
-konsole twelve is where i like to make ~/bin current -- first i cd2 (remember all those<br>
+konsole twelve is where i like to make ~/bin current - first i cd2 (remember all those<br>
 directory changing aliases in .bashrc), then run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crdme">crdme</a> to verify everything executable<br>
 on the path has a line entry in the <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/Readme">Readme</a> there<br>
 <br>
-after the housekeeping, i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cpel">cpel</a> to see the 29 most recently modified files -- this<br>
+after the housekeeping, i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cpel">cpel</a> to see the 29 most recently modified files - this<br>
 may remind me of incomplete chores, or other tasks i want to start<br>
 <br>
 absent further work to be done here, i move on to thirteen<br>
 <br>
 <b>konsole thirteen</b><br>
-thirteen is for ~/txt, accessible via cd3 -- all my logs are here, and blogs, and reminders -- <br>
-in short, everything textual that needs a home -- usually i <b>cpel</b> and move on to fourteen<br>
+thirteen is for ~/txt, accessible via cd3 - all my logs are here, and blogs, and reminders - <br>
+in short, everything textual that needs a home - usually i <b>cpel</b> and move on to fourteen<br>
 <br>
 <b>konsole fourteen</b><br>
 cd4 (python), cpel<br>
@@ -309,15 +335,15 @@ cd5 (~/tcl), cpel<br>
 cd6 (~/.vim), cpel<br>
 <br>
 <b>konsole seventeen</b><br>
-cd7 (~/.build/vim) -- here i start with <b>dp</b>, my &quot;dangerous path&quot; function defined in .bashrc<br>
-that adds $(pwd) to the beginning of $PATH, because all my vim build scripts are here --<br>
+cd7 (~/.build/vim) - here i start with <b>dp</b>, my &quot;dangerous path&quot; function defined in .bashrc<br>
+that adds $(pwd) to the beginning of $PATH, because all my vim build scripts are here -<br>
 next i may just do an <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsb2">hlsb2</a> and move on, or, if bram's been posting patches in vim_dev<br>
 i will start an update/build process without even checking hlsb<br>
 <br>
 the first script run by hlsb2 is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsb">hlsb</a>, which runs both <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlslt">hlslt</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsld">hlsld</a>, making use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ee">ee</a><br>
-along the way -- the purpose of all this is to run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/t">t</a>, which at its core performs an <br>
-'hg incoming' against the vim repository -- all the 'hls_' modules test &quot;how long since&quot;<br>
-the last empty 't' or the last data hit -- i don't want to unduly stress the server, especially<br>
+along the way - the purpose of all this is to run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/t">t</a>, which at its core performs an <br>
+'hg incoming' against the vim repository - all the 'hls_' modules test &quot;how long since&quot;<br>
+the last empty 't' or the last data hit - i don't want to unduly stress the server, especially<br>
 when there's no cause to believe any patches have been uploaded, so my rule is to not<br>
 't' any more often than once every 10 hours<br>
 <br>
@@ -328,21 +354,21 @@ updates&quot; calculation<br>
 when it all comes together it looks like <a href="hlsb2.png">this</a><br>
 <br>
 if there are patches, i start xterm&amp; from konsole 17 so the $(pwd) and $PATH will be<br>
-set for me already -- in that xterm i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/tfu">tfu</a>, which starts a 'tail -f' on my update.log -- i<br>
+set for me already - in that xterm i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/tfu">tfu</a>, which starts a 'tail -f' on my update.log - i<br>
 arrange the xterm so i can watch it when i alt-tab back to konsole 17, where i start the<br>
 update process<br>
 <br>
-there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a> -- u2 makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/cs">cs</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/lft.awk">lft.awk</a><br>
+there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a> - u2 makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/cs">cs</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/lft.awk">lft.awk</a><br>
 to determine what to merge<br>
 <br>
 <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/m">m</a> makes vim, but if somehow configure got triggered i'll cancel it and run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/myconfig">myconfig</a><br>
-so buildsize and compiledby get defined -- it is finding GTK2 with no help from me<br>
+so buildsize and compiledby get defined - it is finding GTK2 with no help from me<br>
 <br>
 and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/i">sudo i</a> installs<br>
 <br>
 <b>konsole eighteen</b><br>
 of late i am using the eighteenth konsole to cdt to my ~/toothpik-s-.vimrc path and<br>
-build my .vimrc share site -- here is where i'll run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cfd">cfd</a> to check for differences in the<br>
+build my .vimrc share site - here is where i'll run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cfd">cfd</a> to check for differences in the<br>
 relevant files<br>
 <br>
 <b>konsole nineteen</b><br>
