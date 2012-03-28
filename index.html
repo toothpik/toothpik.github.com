@@ -129,11 +129,12 @@ display the time fetchmail will next attempt a fetch<br>
 here's a <a href="cccr.png">picture</a> of cr in action (in a &quot;long&quot; konsole)<br>
 <br>
 <b>konsole two</b><br>
-here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcc2">tcc2</a> - tcc2 calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcnlc2">tcnlc2</a>, which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/bcdit">bcdit</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/trimc">trimc</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">tocal</a> resulting in an extract<br>
-from my calendar being <a href="tc.png">output</a> to the command line with current date flagged<br>
+here i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/t1">t1</a> - t1 calls <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tcnlc3">tcnlc3</a>, which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/bcdit3">bcdit3</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/trimc">trimc</a> on <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">tocal</a> resulting in an extract<br>
+from my calendar being <a href="tc.png">output</a> to the command line with current date boxed<br>
 <br>
-i create years for tocal with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crt_tocal">crt_tocal</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/adholtt">adholtt</a>, and i edit it with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tocal">tocal</a> which sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/tocal.vim">tocal.vim</a><br>
-(which in turn sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/fcd.vim">fcd.vim</a> so it can find and highlight current date)<br>
+i create years for tocal with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crttc">crttc</a> which invokes <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/crt_tocal">crt_tocal</a>, adbirtt, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/adholtt">adholtt</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/addsttt">addsttt</a> in order<br>
+to create the year, then add birthdays, holidays and DST changes - i edit it with <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tocal">tocal</a> which sources<br>
+<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/tocal.vim">tocal.vim</a> (which in turn sources <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/fcd.vim">fcd.vim</a> so it can find and highlight current date)<br>
 <br>
 <b>konsole three</b><br>
 in my third konsole i run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ccct">ccct</a>, my countdown reminder module - some of the scripts triggered by<br>
