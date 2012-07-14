@@ -124,13 +124,31 @@ tabs, or 19 without an argument - I don't show the tab labels in konsole, it is 
 to switch between tabs with shift-left and shift-right there's no need for mouse clickable space<br>
 wasting decorations - I almost never use the mouse in konsole anyway - I'm a vimmer, after all<br>
 <br>
-<b>konsole one</b><br>
-a recent openSUSE upgrade disaster rendered kmail inoperable so I've returned to my true love,<br>
-mutt - since email is of prime importance to me, in konsole one I run either mutt or the status display cr<br>
-which I've already mentioned - cr runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> to display current mail folders, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> to<br>
+<b>mail konsole</b><br>
+On my first desktop I open a konsole for mail, using &quot;sk Mail&quot; so there's no doubt where I am or<br>
+what I'm looking at when I'm there, even if the garish green wallpaper I've been using for years for<br>
+desktop #1 fails to jiggle my sluggish brain.  It's only natural for fans of vim to be fans of mutt as<br>
+their mail client of choice, and I am no exception.  Some of the scripts I use to support my email<br>
+session follow:<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cr">cr</a> - &quot;check received&quot; is the mnemonic here<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> - the workhorse that displays mail folders updated today, sorted on time<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> - puts commas in the size field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> - look at fetchmail log and predict the time of the next fetch<br>
+<br>
+<br>
+<br>
+<br>
+<!--
+I've already mentioned - cr runs <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr">ccr</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/ccr.awk">ccr.awk</a> to display current mail folders, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/laflp">laflp</a> to<br>
 display the time fetchmail will next attempt a fetch<br>
 <br>
 here's a <a href="cccr.png">picture</a> of cr in action (in a &quot;long&quot; konsole)<br>
+-->
+<b>konsole one</b><br>
+I like to display the local weather in konsole one - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wiv">wiv</a> displays it in a hidden vim buffer.<br>
+<br>
+<br>
 <br>
 <!-- 
 <b>konsole two</b><br>
@@ -202,9 +220,10 @@ copying my last spreadsheet I defined the format for what I refer to as the <b>p
 &nbsp;&nbsp;&nbsp;&nbsp;column 9 - cc72-80 - reconciliation amount<br>
 &nbsp;&nbsp;&nbsp;&nbsp;column 10 - cc82-86 - reconciliation date<br>
 <br>
-I have defined fiscal months as starting on the 23rd and ending on the 22nd - that way there's<br>
-a full week of lead time for transactions targeted for the 1st, and the month starts off clean<br>
-with the first transactions first - that's my take on it, it's my system, so I get to decide<br>
+I have defined fiscal months as starting on the 23rd of the preceding month and ending on the<br>
+22nd - that way there's a full week of lead time for transactions targeted for the 1st, and the<br>
+month starts off clean with the first transactions first - that's my take on it, it's my system,<br>
+so I get to decide<br>
 <br>
 the script I use the most for displaying it is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m1">m1</a>, which uses <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/curpmo">curpmo</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/curmo.awk">curmo.awk</a> to determine<br>
 the current month to be displayed by <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m12">m12</a><br>
