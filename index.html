@@ -27,11 +27,9 @@ It's also about how to have fun with python and tcl and perl<br>
 <br>
 ...and bash, awk, grep, sed, and all the rest.<br>
 <br>
-Lately I am inclined to build an interpreter free vim - no python, tcl, or perl linked in - mainly<br> 
-this is a tactic in the &quot;quicker-enter-to-running&quot; war - it is also backed with the understanding<br>
-that if you want to do something to your buffer in a language other than VimL you can write<br>
-a function to save your buffer, then call an external script with system(), or :r!&lt;scriptname&gt;,<br>
-or :[range]!&lt;scriptname&gt;, or any of a dozen other ways.<br>
+Due to all the recent activity from ZyX and others on the python interface I've started building vim<br>
+with python enabled - I figure the more people compiling and using it the quicker any problems will be<br>
+uncovered.  To this end I've started re-writing all my &quot;plan&quot; tcl scripts as vim/python<br>
 <br>
 Here's my <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vimrc">.vimrc</a>, as it existed  2013-May-12<br>
 <br>
@@ -127,7 +125,7 @@ to switch between tabs with shift-left and shift-right there's no need for mouse
 wasting decorations - I almost never use the mouse in konsole anyway - I'm a vimmer, after all<br>
 <br>
 <b>mail konsole</b><br>
-On my first desktop I open a konsole for mail, using &quot;sk Mail&quot; so there's no doubt where I am or<br>
+On my first desktop I open a konsole for mail, using <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/skm">skm</a> so there's no doubt where I am or<br>
 what I'm looking at when I'm there, since the nimrods in charge of Progress decided it isn't at all<br>
 helpful to have different wallpapers on each desktop.  It's only natural for fans of vim to be fans of<br>
 mutt as their mail client of choice, and I am no exception.  Some of the scripts I use to support my<br>
