@@ -68,8 +68,8 @@ email session follow:<br>
 <br>
 <b>konsole one</b><br>
 On my seccond desktop I keep my main konsole with 20 tabs.  I like to display the local weather<br>
-forecast in konsole one - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wiv">wiv</a> displays it in a hidden vim buffer, which is nice for highlighting all<br>
-the predicted high temperatures for the week (or lows).  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ccw">ccw</a> displays it in the konsole window.<br>
+forecast in konsole one - <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/wiv">wiv</a> displays it in a hidden vim buffer, which is nice for highlighting<br>
+all th  2013-May-31<br>
 they both use the tcl <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/cw">cw</a> and ccw uses the bin <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cw">cw</a><br>
 <br>
 <b>konsole two</b><br>
@@ -188,11 +188,12 @@ I will start an update/build process<br>
 the first script run by hl is <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsb">hlsb</a>, which runs both <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlslt">hlslt</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hlsld">hlsld</a>, making use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ee">ee</a><br>
 along the way - the purpose of all this is to run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/t">t</a>, which at its core performs an <br>
 'hg incoming' against the vim repository - all the 'hls_' modules test &quot;how long since&quot;<br>
-the last empty 't' or the last data hit - I don't want to unduly stress the server, especially<br>
-when there's no cause to believe any patches have been uploaded, so my rule is to not<br>
-'t' any more often than once every 10 hours<br>
+the last empty 't' or the last data hit - I don't want to unduly stress the server,<br>
+especially when there's no cause to believe any patches have been uploaded, so my rule<br>
+is to not 't' any more often than once every 10 hours<br>
 <br>
-there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a> - u2 makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/cs">cs</a> to determine what to merge<br>
+there are three main scripts to update:  <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">u</a>, <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">u2</a>, and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">u3</a> - u2 makes use of <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/cs">cs</a> to determine<br>
+what to merge<br>
 <br>
 <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/m">m</a> makes vim, but if somehow configure got triggered I'll cancel it and run <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/myconfig">myconfig</a><br>
 so buildsize and compiledby get defined - it is finding GTK2 with no help from me<br>
