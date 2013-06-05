@@ -193,26 +193,10 @@ FIELDWIDTHS feature of awk springs to mind, but every language I
 know can parse lines of a known<br>
 format<br>
 <br>
-copying my last spreadsheet I defined the format for what I refer
-to as the &quot;plan&quot; modules as<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 1 - cc1-5 - date of transaction,
-format m/d (right justified)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 2 - cc7-9 - type of transaction or
-check number<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 3 - cc11-40 - description (name of
-merchant)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 4 - cc42-43 - requested clear date
-for online transactions<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 5 - cc45-46 - actual clear date<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 6 - cc48-57 - transaction amount<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 7 - cc60 - blank for future, 'x' for
-past<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 8 - cc62-70 - balance<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 9 - cc72-80 - reconciliation
-amount<br>
-&nbsp;&nbsp;&nbsp;&nbsp;column 10 - cc82-86 - reconciliation
-date<br>
+copying my last spreadsheet I defined what I refer to as the &quot;plan&quot; 
+modules as having the following<br>
+<a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_format">format</a><br>
 <br>
 I have defined fiscal months as starting on the 23rd of the
 preceding month and ending on the<br>
@@ -275,24 +259,22 @@ plan11.sed</a> - <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan12.sed">
 plan12.sed</a><br>
 <br>
-the plan_yyyy data modules have a very specific <a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_format">
-format</a>, and I edit them by invoking <a href=
+I edit the plan modules by invoking <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/vp">vp</a>
 or <a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/gp">gp</a>,<br>
-
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/gp">gp</a>,
 which sources <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/plan.vim">
-plan.vim</a> as it calls up the module - any of <a href=
+plan.vim</a> as it calls up the module<br>
+- any of <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/planbal.py">
 planbal.py</a>, <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/planfood.py">
 planfood.py</a>, or <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/prec.py">
-prec.py</a><br>
-may be invoked by different &lt;Leader&gt; mappings defined in
-plan.vim<br>
+prec.py</a>
+may be invoked by different &lt;Leader&gt; mappings<br>
+defined in plan.vim<br>
 <br>
 when it's time, I make the next year's plan using <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/plannew">
@@ -332,18 +314,10 @@ and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/perl/cfm">
 perl/cfm</a><br>
 <br>
-another tool that can be used to aid in estimating gas, electric,
-or other seasonal bills is<br>
-to pipe lfy into <a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ghs">
-ghs</a>, then in gvim locate the merchant of interest with '/' or
-'*' or even<br>
-:let @/ = 'merchant of interest', then hit ',o' - I currently use
-comma as my Leader for<br>
-mappings, and &lt;Leader&gt;o is mapped to a powerful fold
-expression that folds away<br>
-everything in the current buffer except lines containing whatever's
-in '@/'<br>
+another tool that can be used to aid in estimating gas or electric bills
+is <a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ept">
+ept</a><br> (mnemonic examine previous transactions)<br>
 <br>
 <b>konsole five</b><br>
 konsole five gets to display the "head before equal" of my visa
@@ -356,24 +330,25 @@ sae.awk</a><br>
 <br>
 <b>konsole six</b><br>
 konsole six is for batteries - the display is with <a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ba">ba</a>
-- scripts triggered by ba include<br>
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ba">
+ba</a> - scripts triggered by ba include<br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/b2">b2</a>
-- main battery age tracking script<br>
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/b2">
+b2</a> - main battery age tracking script<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/hoirb">hoirb</a>
-- how old is raney's battery<br>
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/hoirb">
+hoirb</a> - how old is raney's battery<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mb">mb</a>
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mb">
+mb</a>
 - mouse batteries<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tpr">tpr</a>
-- raney's tire pressure check script<br>
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tpr">
+tpr</a> - raney's tire pressure check script<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tpk">tpk</a>
-- road king tire pressure check script<br>
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/tpk">
+tpk</a> - road king tire pressure check script<br>
 <br>
 with this system the batteries in the thermostat never die, and I
 never pick up a remote<br>
@@ -389,7 +364,7 @@ that adds $(pwd) to the beginning of $PATH, because all my vim
 build scripts are here -<br>
 next I may just do an <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/hl">
-hl</a> and move on, or, if bram's been posting patches in
+hl</a> and move on, or, if Bram's been posting patches in
 vim_dev<br>
 I will start an update/build process<br>
 <br>
