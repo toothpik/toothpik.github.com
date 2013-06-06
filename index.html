@@ -101,7 +101,6 @@ isn't helpful to have different wallpapers on each desktop.<br>
 mutt as their mail client of choice, and I<br>
 am no
 exception. Some of the scripts I use to support my email session follow:<br>
-<!-- -here- -->
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cr">
@@ -121,14 +120,16 @@ laflp</a> - look at fetchmail log and predict the time of the next fetch<br>
 <br>
 <b>konsole one</b><br>
 On my seccond desktop I keep my main konsole with 20 tabs. I like
-to display the local weather<br>
+to display the local<br>
+weather
 forecast in konsole one with <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ccw">
 ccw</a> which uses <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/php/cw.php">
 php</a> to get the data and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/parseweather.py">
-parseweather</a> to parse it<br>
+parseweather</a><br>
+to parse it<br>
 <br>
 <b>konsole two</b><br>
 here I run <a href=
@@ -141,16 +142,16 @@ bcdit</a> and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/trimc">
 trimc</a> on <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/tocal">
-tocal</a> resulting in an extract<br>
-from my calendar being <a href=
+tocal</a> resulting in an<br>
+extract from my calendar being <a href=
 "tc.png">
 output</a> to the command line with current date flagged<br>
 <br>
 <b>konsole three</b><br>
 in my third konsole I run <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/3">
-3</a>, my countdown reminder module - some of the scripts triggered by<br>
-3 include:<br>
+3</a>, my countdown reminder module - some of the scripts triggered<br>
+by 3 include:<br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/cct">
@@ -187,39 +188,42 @@ this</a><br>
 <br>
 <b>konsole four</b><br>
 konsole four is for budgeting - here I track my checking account,
-reconcile, and project it into the<br>
-future - over the years I've used a variety of spreadsheets to
-store this data, and have repeatedly<br>
-been frustrated by upgrades to the software making my older data
-difficult to get to - the answer<br>
-I've come to embrace is ascii text - I cannot imagine a time when
-text is unreadable - ok, yes, I can<br>
-if I stray into disaster science fiction, but if we get to that
-point we won't have banks and checking<br>
-accounts anyway - whether the scripting language that reads it
-evolves is irrelevant - the data is<br>
-the important thing, and text is the most universally readable
-format available<br>
+reconcile, and project<br>
+it into the future - over the years I've used a variety of spreadsheets to
+store this data,<br>
+and have repeatedly
+been frustrated by upgrades to the software making my older data<br>
+difficult to get to - the answer
+I've come to embrace is ascii text - I cannot imagine a<br>
+time when text is unreadable - ok, yes, I can
+if I stray into disaster science fiction,<br>
+but if we get to that point we won't have banks and checking
+accounts anyway - whether<br>
+the scripting language that reads it evolves is irrelevant - the data is
+the important<br>
+thing, and text is the most universally readable format available<br>
 <br>
 by formatting the data in specific columns I enable a variety of
-languages easy access to it - the<br>
+languages easy access<br>
+to it - the
 FIELDWIDTHS feature of awk springs to mind, but every language I
-know can parse lines of a known<br>
-format<br>
+know can parse<br>
+lines of a known format<br>
 <br>
 copying my last spreadsheet I defined what I refer to as the &quot;plan&quot; 
-modules as having the following<br>
-<a href=
+modules as having the<br>
+following <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_format">
 format</a><br>
 <br>
 I have defined fiscal months as starting on the 23rd of the
-preceding month and ending on the<br>
-22nd - that way there's a full week of lead time for transactions
-targeted for the 1st, and the<br>
+preceding month and ending<br>
+on the 22nd - that way there's a full week of lead time for transactions
+targeted for the<br>
+1st, and the
 month starts off clean with the first transactions first - that's
-my take on it, it's my system,<br>
-so I get to decide<br>
+my take on<br>
+it, it's my system, so I get to decide<br>
 <br>
 the script I use the most for displaying it is <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m">
@@ -231,22 +235,23 @@ to be displayed by <a href=
 m12</a><br>
 <br>
 m uses a variable combination of mYY modules to display the
-relevant portion of my account, for<br>
-example:<br>
+relevant portion of my account,<br>
+for example:<br>
 <pre>
     { m12 8; m12 9; } | head -31
 </pre>
 will display august and most of september for 2012 - m starts by
-running the entire year (<a href=
-"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m12">
-m12</a>)<br>
+running the entire year<br>
+(<a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/m12">m12</a>)
 through <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/funclear.awk">
 funclear.awk</a> in order to determine whether the first unclear
-transaction occurs in the<br>
+transaction<br>
+occurs in the
 same or the previous fiscal month - with this information it can
-design the most relevant display<br>
-using two of<br>
+design<br> the most relevant display using two of<br>
+<br>
 - <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/plan1.sed">
 plan1.sed</a> - <a href=
@@ -280,16 +285,16 @@ vp</a> or <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/gp">
 gp</a>, which sources <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/plan.vim">
-plan.vim</a> as it calls up the module<br>
-- any of <a href=
+plan.vim</a> as it calls up the<br>
+module - any of <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/planbal.py">
 planbal.py</a>, <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/planfood.py">
 planfood.py</a>, or <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.vim/prec.py">
 prec.py</a>
-may be invoked by different &lt;Leader&gt; mappings<br>
-defined in plan.vim<br>
+may be invoked by different &lt;Leader&gt;<br>
+mappings defined in plan.vim<br>
 <br>
 when it's time, I make the next year's plan using <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/plannew">
@@ -297,26 +302,26 @@ plannew</a>, a bash script that combines a<br>
 tcl <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/tcl/plannew">
 core</a>, two python scripts, and five perl scripts, most of which
-are tailored to my specific<br>
-needs, with the exception of <a href=
+are tailored to my<br>
+specific needs, with the exception of <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/py/plandsh">
-plandsh</a> which puts a line of dashes between months at the<br>
-end of the series - driving all this is the <a href=
+plandsh</a> which puts a line of dashes between months<br>
+at the end of the series - driving all this is the <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_core">
-plan_core</a> which is described in the <a href=
+plan_core</a> which is described in the<br>
+<a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/txt/plan_readme">
-plan_readme</a> -<br>
-of note is the last line in the core with description "food &amp;
-atm" - the more accurate you<br>
-can be in estimating this important item the closer your future
-projections will be to reality -<br>
-a powerful tool in the quest for accurate food/atm estimates is a
-collaberation between <a href=
+plan_readme</a> - of note is the last line in the core with description "food &amp;
+atm" - the<br>
+more accurate you can be in estimating this important item the closer your future<br>
+projections will be to reality -
+a powerful tool in the quest for accurate food/atm<br>
+estimates is a collaberation between <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lfy">
-lfy</a><br>
-(last fiscal year) and <a href=
+lfy</a> (last fiscal year) and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mft">
-mft</a> (make food totals) - as<br>
+mft</a> (make food totals)<br>
+- ie.<br>
 <pre>
     lfy | mft
 </pre>
@@ -329,6 +334,7 @@ and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/perl/cfm">
 perl/cfm</a><br>
 <br>
+<!-- -here- -->
 another tool that can be used to aid in estimating gas or electric bills
 is <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/ept">
