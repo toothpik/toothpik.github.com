@@ -276,7 +276,7 @@ atm" - the<br>
 more accurate you can be in estimating this important item the closer your future<br>
 projections will be to reality -
 a powerful tool in the quest for accurate food/atm<br>
-estimates is a collaberation between <a href=
+estimates is a collaboration between <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/lfy">
 lfy</a> (last fiscal year) and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin/mft">
@@ -338,7 +338,7 @@ replacements, I always have a<br>
 good supply of "used" batteries for my cordless mouse and
 every-day-carry flashlight<br>
 <br>
-<b>konsole seventeen</b><br>
+<b>vim build konsole</b><br>
 cd7 (~/.build/vim) - here I start with <b>dp</b>, my "dangerous
 path" function defined in .bashrc<br>
 that adds $(pwd) to the beginning of $PATH, because all my vim
@@ -371,14 +371,21 @@ is to not 't' any more often than once every 10 hours<br>
 <br>
 there are three main scripts to update: <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u">
-u</a>, <a href=
+u</a> (to get), <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u2">
-u2</a>, and <a href=
+u2</a> (merge), and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/u3">
-u3</a> - u2 makes use of <a href=
+u3</a> (commit) - u2<br>
+makes use of <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/cs">
-cs</a> to determine<br>
-what to merge<br>
+cs</a> to determine what to merge - these are all I need to update the vast<br>
+majority of the time - however there are times the stinking tags module throws a monkey<br>
+wrench into the works and u2 fails - for these rare occasions I trot out <a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/">u3t</a> which performs<br>
+a commit with a message about tags and how happy I am they are included, then I run<br>
+u2 with the result of <a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/">cs2</a> as its argument,
+then the final u3<br>
 <br>
 <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/m">
@@ -393,13 +400,18 @@ and <a href=
 "https://github.com/toothpik/toothpik-s-.vimrc/blob/master/.build/vim/i">
 sudo i</a> installs<br>
 <br>
-<b>konsole twenty</b><br>
+<b>konsole ten</b><br>
 <br>
 On my last konsole tab I perform cdb and dp, both defined in .bashrc, in preparation<br>
 of a mail window.  Before I start the fetchmail daemon I check the two log files size<br>
 with 
-<a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/hb">hb</a> - 
-if they are running amok I use <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cfl">cfl</a> and <a href="https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cpl">cpl</a> as needed<br>
+<a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/hb"
+>hb</a> - if they are running amok I use <a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cfl">
+cfl</a> and <a href=
+"https://github.com/toothpik/toothpik-s-.vimrc/blob/master/bin-mail/cpl">
+cpl</a> as needed<br>
 <br>
 It's only natural for fans of vim to be fans of
 mutt as their mail client of choice, and I<br>
